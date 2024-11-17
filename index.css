@@ -354,6 +354,10 @@ main table{
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  } 
 
+body{
+    background-color:black;
+}
+
  .progra {
     margin-left: 1rem;
     margin-top: 1.5rem;
