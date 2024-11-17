@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed; /*fixed; Fixed at the top*/
+    top: 0;
+    left: 0;
+    width: 100%;      /* Full width */
+    color: white;
+    z-index: 1000;   /* Keep it on top */
+ }
+
+ main{
+    padding-top: 155px;
+}
+
+.Home{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color: rgb(207, 15, 15);
+    padding: 1rem;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.tut button{
+    font-size: 1.5rem;
+    background-color: rgb(207, 15, 15);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+  } 
+
+ .tut button:hover{
+     background-color: rgb(183, 14, 14);
+    }  
+
+ .searching{
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lange{
+    display: flex;
+    overflow: scroll;
+    padding: 0.5rem;
+    background-color: white;
+    position: sticky;
+}
+
+.lange button:hover{
+    border-color: red;
+}
+
+.lange button{
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin-left: 5rem;
+    border-radius: 15px;
+    background-color: rgb(238, 218, 222);
+    color: rgb(193, 15, 15);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-width: 0.1px;
+}
+
+.mai{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    height: 500px;
+    overflow: scroll;
+    padding: 1rem;
+    background-color: rgb(252, 246, 246);
+}
+
+.mai ul{
+       word-spacing: 0.5rem; 
+       margin-left: 2rem;
+       margin-top: 1rem;
+}
+
+.mai pre{
+    background-color: rgb(6, 4, 4);
+    color: white;
+    width: 700px;
+    border: solid;
+    border-radius: 10px;
+    margin-left: 5rem;
+}
+
+
+
+.sidebar{
+    height: 500px;
+    width: 200px;
+    background-color: rgb(173, 154, 154);
+    display: grid;
+    overflow-y: scroll;
+    float: left;
+}
+
+.sidebar button{
+    font-size: 2.5rem;
+    border: none;
+}
+
+.sidebar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: black;
+}
+
+.for{
+    margin-left: 8.5rem;
+    background-color: rgb(48, 42, 42);
+    width: 1000px;
+    padding: 3rem;
+    border-radius: 40px;
+    position: absolute;
+    margin-top: 3rem;
+    height: 420px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .for form{
+    margin-top: 1rem;
+ }
+
+ .for h1{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+    color: rgb(225, 227, 227);
+ }
+
+ .for .right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+     
+ }
+
+ .Detail{ 
+    display: flex;
+    height: 520px;
+    color: white;
+    justify-content: space-between;
+ }
+
+ .right table{
+     border-spacing: 28px;
+     font-weight: 100;
+     font-family: none;
+     cursor: pointer;
+     font-size: medium;
+     font-style: inherit;
+ }
+
+ th{
+    text-decoration: underline;
+    font-size: 1.2rem;
+ }
+
+ form .equal{
+    height: 2rem;
+    width: 20rem;
+    border-radius: 5px;
+ }
+
+ .for button{
+        margin-bottom: 2.5rem;
+        margin-left: 13rem;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        border: none;
+        padding: 0.1rem;
+        color: white;
+        background-color: rgb(215, 38, 38);  
+        cursor: pointer;     
+ }
+ 
+.Detail p{
+   margin-top: 30rem;
+   margin-left: 10rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+/* tutorial section*/
+header .informa{
+    background-color:rgb(15, 15, 15);
+}
+
+.informa{
+    display: flex;
+}
+
+.side1{
+    margin-left: 2rem;
+    
+}
+
+.side1 h1{
+    font-size: 5rem;
+    color: white;
+    margin-top: 10rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(240, 229, 214);
+}
+
+.side1 h2{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.side1 p{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contener{
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+.box{
+    display: inline-block;
+    height: 500px;
+    width: 250px;
+    border-radius: 10px;
+}
+.Box1{
+    background-color: rgb(235, 11, 11);
+    position: relative;
+    left: 10rem;
+    bottom: 2rem;
+    z-index: 8;
+    box-shadow: 10px 10px black;
+    transform: matrix(4deg 1s);   
+}
+
+.Box1 img{ 
+    height: 200px;
+    width: 240px;
+    padding: 0.5rem;
+    right: 2rem;
+    border-radius: 35px;
+    padding-right: 1rem;
+    margin-top: 3rem;
+    box-shadow: 6px 7px 2px rgb(76, 37, 37);
+ }
+
+ .Box1 h2{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-left: 6rem;
+     text-decoration-line: underline;
+     text-shadow: 1.5px 1.5px;
+     color: black;
+ }
+
+ .Box1 p{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+ }
+
+.Box2{
+    background-color: rgb(231, 144, 14);
+    position: relative;
+    left: 2rem;
+    bottom: 3rem;
+    z-index: 7;
+    box-shadow: 10px 10px wheat;
+}
+
+.Box2 img{
+    height: 200px;
+    width: 200px;
+    padding: 0.5rem;
+    right: 2rem;
+    border-radius: 35px;
+    margin-left: 2.5rem;
+    box-shadow: 6px 7px 2px black;  
+ }
+ .Box2 h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 6rem;
+    text-decoration-line: underline;
+    text-shadow: 1.5px 1.5px;
+    color: black;
+}
+
+.Box2 p{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+ }
+
+main h2{
+    color: white;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background-color: rgb(22, 3, 105);
+}
+
+main table{
+    margin-left: 2rem;
+    border-spacing: 50px;
+    
+}
+
+
+ .Tutori h2{
+       margin-top: 2rem;
+       margin-left: 2rem;
+       font-size: 3rem;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ } 
+
+ .progra {
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    gap: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ .progra a{
+    color: rgb(157, 156, 156);
+    margin-left: 1.5rem;
+ }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+    .Home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Home .left h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        display: grid;
+        word-spacing: 0.5rem;
+    }
+
+    .tut {
+        /* width: 100%; */
+        /* align-items: center; */
+        flex-direction: column;
+        
+    }
+
+    .tut button {
+        /* width: 100%; */
+        padding: 0.5rem;
+        margin-right: 3rem;
+        justify-content: space-between;
+    }
+
+    .searching {
+        display: none;
+    }
+
+    .lange {
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .lange button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+        word-spacing: 1rem;
+    }
+
+    .mai {
+        /* margin-top: 1rem; */
+        padding: 1rem;
+        font-size: 1rem;
+        height: auto;
+        overflow: auto;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .Detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .for {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .for h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .for label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .for .equal {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .for button {
+        margin-left: 0;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .Detail table {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .Detail td,
+    .Detail th {
+        padding: 0.5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .Detail p {
+        margin-left: 0;
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .Box1 img {
+        height: 180px;
+        width: 220px;
+        padding: 0.5rem;
+        right: 2rem;
+        border-radius: 35px;
+        margin-top: 3rem;
+        box-shadow: 6px 7px 2px rgb(76, 37, 37);
+    }
+
+    .Box1 {
+        position: relative;
+        left: 2rem;
+        bottom: 2rem;
+    }
+
+    .Box2 img {
+        height: 180px;
+        width: 180px;
+        padding: 0.5rem;
+        border-radius: 35px;
+        margin-left: 1.5rem;
+        box-shadow: 6px 7px 2px black;
+    }
+
+    .Box2 {
+        position: relative;
+        left: 1rem;
+        bottom: 4rem;
+    }
+
+
+}
+
+
+
+
+
+
+/* Tablet width */
+@media(max-width: 768px) {
+    .Home {
+        flex-direction: row;
+        padding: 0.5rem;
+        justify-content: space-around;
+    }
+     
+
+    .tut button {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .lange{
+        display: flex;
+        overflow: scroll;
+        padding: 0.5rem;
+        background-color: white;
+        position: sticky;
+    } 
+
+    
+.lange button{
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin-left: 5rem;
+    border-radius: 15px;
+    background-color: rgb(238, 218, 222);
+    color: rgb(193, 15, 15);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-width: 0.1px;
+  }
+
+
+    .mai {
+        padding: 1.5rem;
+        font-size: 1.2rem;
+        height: 500px;
+    }
+
+    .mai pre{
+        overflow-y: scroll;
+        width: 85%;
+    }
+
+
+    footer{
+        height: 550px;
+    }
+
+    .Detail .left{
+        margin-top: 1rem;
+    }
+
+    .for{
+        margin-left: 4rem;
+        background-color: rgb(48, 42, 42);
+        width: 660px;
+        padding: 3rem;
+        border-radius: 30px;
+        position: absolute;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.9rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+    
+
+    .Detail {
+        flex-direction: column;
+    }
+
+    .Detail p {
+        margin-left: 5rem;
+        font-size: 1.1rem;
+    }
+
+    .Box1 img {
+        height: 220px;
+        width: 240px;
+        padding: 0.5rem;
+        right: 2rem;
+        border-radius: 35px;
+        margin-top: 3rem;
+        box-shadow: 6px 7px 2px rgb(76, 37, 37);
+    }
+
+    .Box1 {
+        position: relative;
+        left: 4rem;
+        bottom: 3rem;
+    }
+
+    .Box2 img {
+        height: 220px;
+        width: 220px;
+        padding: 0.5rem;
+        border-radius: 35px;
+        margin-left: 2rem;
+        box-shadow: 6px 7px 2px black;
+    }
+
+    .Box2 {
+        position: relative;
+        left: 3rem;
+        bottom: 5rem;
+    }
+}
+
+
+
+
+
+
+
+
