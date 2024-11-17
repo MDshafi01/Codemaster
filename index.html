@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMastery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      
+    <header>
+     <div class="head">
+        
+      <div class="Home">
+        <div class="left">
+          <h1>CodeMastery</h1>
+        </div>
+  
+         <nav>
+           <div class="tut">
+             <a href="toutr.html"><button>Tutorial</button></a>
+             <a href="#series"><button>Services</button></a>
+             <a href="tutorials.html"><button>Certificates</button></a>
+            </div>
+          </nav>
+
+            <div class="serch">
+                <input type="text" placeholder="Search" class="searching">
+            </div> 
+
+        </div> 
+
+          <nav>
+            <div class="lange">
+                <a href="index.html"><button>C</button></a>
+                <a href="cpp.html"><button>CPP</button></a>
+                <a href="HTML.html"><button>HTML</button></a>
+                <a href="Css.html"><button>CSS</button></a>
+                <a href="js.html"><button>JavaScript</button></a>
+                <a href="java.html"><button>Java</button></a>
+                <a href="python.html"><button>Python</button></a>
+                <a href="csharp.html"><button>C#</button></a>
+                <a href="PHP.html"><button>PHP</button></a>
+                <a href="MYSQL.html"><button>MySQL</button></a>
+                <a href="DSA.html"><button>DSA</button></a>
+            </div>
+            </nav>
+      </div>
+    </header>
+  
+    <main>
+
+        <div class="sidebar">
+        <button><a href="#one">C Introduction</a></button>
+        <button><a href="#two">Data Types in C</a></button>
+        <button><a href="#three">C Operators</a></button>
+        <button><a href="#four">C Booleans</a></button>
+        <button><a href="#five">C If ... Else</a></button>
+        <button><a href="#six">C Switch</a></button>
+        <button><a href="#seven">C While Loop</a></button>
+        <button><a href="#eight">C For Loop</a></button>
+        <button><a href="#nine">C Break and Continue</a></button>
+        <button><a href="#ten">C Arrays</a></button>
+        <button><a href="#eleven">C Strings</a></button>
+        <button><a href="#Twelve">C User Input</a></button>
+        <button><a href="#Thirteen">C Memory Address</a></button>
+        <button><a href="#Fourteen">C Pointers</a></button>
+
+        </div>
+
+
+    <div class="mai">
+      <section id="one">
+        <h1>C Introduction</h1>
+          <ul>
+            <li>C is a powerful, efficient, and widely-used programming language. It was developed in the 1970s by Dennis Ritchie at AT&T Bell Labs.</li>
+            <li>C language is known for its simplicity and speed, making it the foundation for many modern programming languages.</li>
+            <li>C is used for developing system software, embedded systems, and application software.</li>
+          </ul>
+           <br>
+          <h3>Why Learn C?</h3>
+           <ul>
+            <li><strong>Fast Execution: </strong>C is a low-level language, meaning it can directly interact with hardware for better performance.
+            </li>
+            <li><strong>Portability: </strong> C programs can run on different platforms with little or no modification.</li>
+            <li><strong>Foundation for Other Languages:</strong> Many popular programming languages like C++, Java, and Python are inspired by C. Learning C helps you understand other languages better.</li>
+            <li><strong>Wide Applications:</strong> From operating systems (like Windows and Linux) to embedded systems, C is used everywhere.</li>
+           </ul>
+           <br>
+           <h2>Syntax and Structure of C</h2>
+           <p>C programming follows a simple syntax. Below is the structure of a basic C program.</p>
+           <br>
+           <h4>Basic Structure:</h4>
+           <pre><strong>
+                #include &lt;stdio&gt;   // Include standard input-output library
+
+                // Main function - where the program starts
+                int main() {
+                    // Variable declaration
+                    int a = 5, b = 10;
+                    int sum;
+                    
+                    // Logic to calculate sum
+                    sum = a + b;
+                    
+                    // Display the result
+                    printf("Sum: %d\n", sum);
+                    
+                    return 0;  // Program finished successfully
+                }
+            </strong>
+            </pre>
+  
+            <h4>Explanation:</h4>
+            <ul>
+                <li>#include &lt;stdio.h&gt;: This line tells the program to include the Standard Input/Output library, which allows us to use functions like printf() to display output.</li>
+                <li>int main(): Every C program starts with the main() function. The execution of the program begins here.</li>
+                <li>return 0;: This indicates that the program has ended successfully.</li>
+            </ul><br><br>
+        </section>
+
+            <section id="two">
+            <h2>Data Types in C</h2>
+            <p>C has several data types that allow you to store different kinds of data.</p>
+            <br>
+            <h4>Basic Data Types:</h4>
+            <ul>
+                <li>int: Used to store integers (whole numbers).</li>
+                <li>float: Used to store decimal numbers (single-precision).</li>
+                <li>double: Used to store larger decimal numbers (double-precision).</li>
+                <li>char: Used to store a single character.</li>
+            </ul><br>
+
+            <h4>Example:</h4>
+            <pre><strong>
+                int age = 25;
+                float temperature = 36.5;
+                double salary = 50000.75;
+                char grade = 'A';                
+            </strong></pre>
+            <br>
+            <h4>Modifiers:</h4>
+            <ul>
+                <li>short: For smaller integer values.</li>
+                <li>long: For larger integer values.</li>
+                <li>unsigned: For positive numbers only.</li>
+            </ul><br><br>
+        </section>
+
+           <section id="three">
+            <h2>C Operators</h2>
+            <p>Operators are symbols that perform operations on variables and values.</p>
+             <br>
+            <h4>Types of Operators:</h4>
+            <ul>
+                <li><strong>Arithmetic Operators:</strong> +, -, *, /, %
+                <ul>
+                    <li>Used for mathematical operations.</li>
+                </ul></li>
+                <li><strong>Relational Operators:</strong> ==, !=, >, <, >=, <= 
+                <ul>
+                    <li>Used to compare two values.</li>
+                </ul>
+                </li>
+                <li><strong>Logical Operators:</strong> &&, ||, !
+                    <ul>
+                        <li>Used to combine multiple conditions.</li>
+                    </ul>
+                </li>
+                <li><strong>Assignment Operators:</strong> =, +=, -=, *=, /=
+                    <ul>
+                        <li>Used to assign values to variables.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section><br><br>
+
+
+        <section id="four">
+        <h2>Booleans in C</h2>
+        <p>Very often, in programming, you will need a data type that can only have one of two values, like:</p>
+
+        <ul>
+            <li>YES / NO</li>
+            <li>ON / OFF</li>
+            <li>TRUE / FALSE</li>
+        </ul>
+        <br>
+
+        <p>For this, C has a bool data type, which is known as booleans.</p>
+         <br>
+        <p>Booleans represent values that are either true or false.</p>
+        <br>
+          <h3>Boolean Variables</h3><br>
+          <p>In C, the bool type is not a built-in data type, like int or char. </p>
+          <br>
+          <p>It was introduced in C99, and you must import the following header file to use it:</p>
+           <br>   
+          <pre>
+            <strong>     
+                #include &lt;stdbool.h&gt;
+            </strong>
+          </pre><br>
+
+          <p>A boolean variable is declared with the bool keyword and can take the values true or false:</p>
+          <br>
+
+           <pre>
+               <strong>         
+                   bool isProgrammingFun = true;
+                   bool isFishTasty = false;
+               </strong>
+           </pre>
+           <br>
+
+           <p>Before trying to print the boolean variables, you should know that boolean values are returned as </p>
+            
+           <strong>integers:</strong>
+
+           <ul>
+            <li>1 (or any other number that is not 0) represents true</li>
+            <li>0 represents false</li>
+           </ul>
+            <br>
+
+         <p>Therefore, you must use the %d format specifier to print a boolean value:</p>
+          <br>
+          <h3>Example</h3>
+          <pre>
+            <strong>
+                // Create boolean variables
+                bool isProgrammingFun = true;
+                bool isFishTasty = false;
+                
+                // Return boolean values
+                printf("%d", isProgrammingFun);   // Returns 1 (true)
+                printf("%d", isFishTasty);       // Returns 0 (false)   
+            </strong>
+          </pre>
+        </section><br><br>
+
+        <section id="five">
+        <h2>C If ... Else</h2><br>
+
+       <h2>Conditions and If Statements</h2>
+       <p>You have already learned that C supports the usual logical conditions from mathematics:</p>
+
+       <ul>
+        <li>Less than: a < b</li>
+        <li>Less than or equal to: a <= b</li>
+        <li>Greater than: a > b</li>
+        <li>Greater than or equal to: a >= b</li>
+        <li>Equal to a == b</li>
+        <li> Not Equal to: a != b</li>
+       </ul>
+       <br>
+           
+       <p>You can use these conditions to perform different actions for different decisions.</p>
+        <br>
+       <p>C has the following conditional statements:</p>
+
+       <ul>
+        <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+        <li>Use else to specify a block of code to be executed, if the same condition is false</li>
+        <li>Use else if to specify a new condition to test, if the first condition is false </li>
+        <li>Use switch to specify many alternative blocks of code to be executed</li>
+       </ul><br>
+
+       <h2>The if Statement</h2>   
+       <p>Use the if statement to specify a block of code to be executed if a condition is true.</p> 
+        <br>
+       <h3>Syntax</h3>
+       <pre>
+        <strong>
+            if (condition) {
+                // block of code to be executed if the condition is true
+              }
+        </strong>
+       </pre>
+       <br>
+        <br>
+       <p>In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text:</p>
+        <br>
+
+        <h3>Example</h3>
+       <pre>
+        <strong>
+            if (20 > 18) {
+                printf("20 is greater than 18");
+              } 
+        </strong>
+       </pre><br>
+
+       <h2>C Else</h2>
+       <br>
+       <h3>The else Statement</h3>
+       <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+       <br>
+       
+       <h3>Syntax</h3>
+
+       <pre>
+        <strong>
+            if (condition) {
+                // block of code to be executed if the condition is true
+              } else {
+                // block of code to be executed if the condition is false
+              } 
+        </strong>
+       </pre>
+       <br>
+
+       <h3>Example</h3>
+        <pre>
+            <strong>
+                int time = 20;
+                if (time < 18) {
+                  printf("Good day.");
+                } else {
+                  printf("Good evening.");
+                }
+                // Outputs "Good evening."
+            </strong>
+        </pre>
+        <br>
+
+        <h2>C Else If</h2>
+        <br>
+        <h3>The else if Statement</h3>
+        <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+        <br>
+        <h3>Syntax</h3>
+        <pre>
+            <strong>
+                if (condition1) {
+                    // block of code to be executed if condition1 is true
+                  } else if (condition2) {
+                    // block of code to be executed if the condition1 is false and condition2 is true
+                  } else {
+                    // block of code to be executed if the condition1 is false and condition2 is false
+                  }
+            </strong>
+        </pre>
+         
+        <h3>Example</h3>
+
+        <pre>
+            <strong>
+                int time = 22;
+                if (time < 10) {
+                  printf("Good morning.");
+                } else if (time < 20) {
+                  printf("Good day.");
+                } else {
+                  printf("Good evening.");
+                }
+                
+                // Outputs "Good evening."
+            </strong>
+        </pre>
+    </section><br><br>
+             
+    <section id="six">
+    <h2>Switch Statement</h2>
+     <p>Instead of writing many if..else statements, you can use the switch statement.</p>
+     <br>
+     <p>The switch statement selects one of many code blocks to be executed:</p>
+
+     <h3>Syntax</h3>
+     <pre>
+        <strong>
+            switch (expression) {
+                case x:
+                  // code block
+                  break;
+                case y:
+                  // code block
+                  break;
+                default:
+                  // code block
+              }
+        </strong>
+     </pre>
+      <br>
+      <p>This is how it works:</p>
+      <ul>
+        <li>The switch expression is evaluated once</li>
+        <li>The value of the expression is compared with the values of each case</li>
+        <li>If there is a match, the associated block of code is executed</li>
+        <li>The break statement breaks out of the switch block and stops the execution</li>
+        <li>The default statement is optional, and specifies some code to run if there is no case match</li>
+      </ul>
+      <br>
+
+      <p>The example below uses the weekday number to calculate the weekday name:</p>
+      <br>
+
+      <h3>Example</h3>
+      <pre>
+        <strong>
+            int day = 4;
+
+            switch (day) {
+              case 1:
+                printf("Monday");
+                break;
+              case 2:
+                printf("Tuesday");
+                break;
+              case 3:
+                printf("Wednesday");
+                break;
+              case 4:
+                printf("Thursday");
+                break;
+              case 5:
+                printf("Friday");
+                break;
+              case 6:
+                printf("Saturday");
+                break;
+              case 7:
+                printf("Sunday");
+                break;
+            }
+            
+            // Outputs "Thursday" (day 4)            
+        </strong>
+      </pre>
+      <br>
+      <h2>The break Keyword</h2>
+      <br>
+      <p>When C reaches a break keyword, it breaks out of the switch block.</p>
+      <br>
+      <p>This will stop the execution of more code and case testing inside the block.</p>
+      <br>
+      <p>When a match is found, and the job is done, it's time for a break. There is no need for more testing.</p>
+       <br>
+      <h2>The default Keyword</h2>
+      <p>The default keyword specifies some code to run if there is no case match:</p>
+      <br>
+      <h3>Example</h3> 
+      <pre>
+        <strong>
+            int day = 4;
+
+            switch (day) {
+              case 6:
+                printf("Today is Saturday");
+                break;
+              case 7:
+                printf("Today is Sunday");
+                break;
+              default:
+                printf("Looking forward to the Weekend");
+            }
+            
+            // Outputs "Looking forward to the Weekend"
+        </strong>
+      </pre>
+      <br>
+      </section>
+      
+      <section id="seven">
+       <h2>Loops</h2>
+       <br>
+       <p>Loops can execute a block of code as long as a specified condition is reached.</p>
+       <br>
+       <p>Loops are handy because they save time, reduce errors, and they make code more readable.</p>
+        <br>
+        <h2>While Loop</h2>
+        <br>
+        <p>The while loop loops through a block of code as long as a specified condition is true:</p>
+         <br>
+         <h3>Syntax</h3>
+         <pre>
+            <strong>
+                while (condition) {
+                    // code block to be executed
+                  }
+            </strong>
+         </pre>
+         <br>
+         <p>In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:</p>
+         <br>
+         <h3>Example</h3>
+         <pre>
+            <strong>
+                int i = 0;
+
+                while (i < 5) {
+                  printf("%d\n", i);
+                  i++;
+                }
+            </strong>
+         </pre>
+         <br>
+         <h2>The Do/While Loop</h2>
+         <br>
+         <p>The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+          <br>
+          <h3>Syntax</h3>
+          <pre>
+            <strong>
+                do {
+                    // code block to be executed
+                  }
+                  while (condition);
+            </strong>
+          </pre>
+          <br>
+          <p>The example below uses a do/while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:</p>
+          <br>
+          <h3>Example</h3>
+          <pre>
+            <strong>
+                int i = 0;
+
+                do {
+                  printf("%d\n", i);
+                  i++;
+                }
+                while (i < 5);                
+            </strong>
+          </pre>
+        </section><br>
+
+
+        <section id="eight">
+        <h2>For Loop</h2>
+        <br>
+        <p>When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:</p>
+         <br>
+         <h3>Syntax</h3>
+         <pre>
+            <strong>
+                for (expression 1; expression 2; expression 3) {
+                    // code block to be executed
+                  }
+            </strong>
+         </pre>
+         <br>
+
+          <p><strong>Expression 1</strong> is executed (one time) before the execution of the code block.</p>
+          <br>
+          <p><strong>Expression 2</strong> defines the condition for executing the code block.</p>
+          <br>
+          <p><strong>Expression 3</strong> is executed (every time) after the code block has been executed.</p>
+          <br>
+
+          <p>The example below will print the numbers 0 to 4:</p>
+           <br>
+           <h3>Example</h3>
+           <pre>
+            <strong>
+                int i;
+
+                for (i = 0; i < 5; i++) {
+                  printf("%d\n", i);
+                }
+            </strong>
+           </pre>
+           <br>
+           <h2>Nested Loops</h2>
+           <br>
+           <p>It is also possible to place a loop inside another loop. This is called a nested loop.</p>
+           <br>
+           <p>The "inner loop" will be executed one time for each iteration of the "outer loop":</p>
+           <br>
+           <h3>Example</h3>
+           <pre>
+            <strong>
+                int i, j;
+
+                // Outer loop
+                for (i = 1; i <= 2; ++i) {
+                  printf("Outer: %d\n", i);  // Executes 2 times
+                
+                  // Inner loop
+                  for (j = 1; j <= 3; ++j) {
+                    printf(" Inner: %d\n", j);  // Executes 6 times (2 * 3)
+                  }
+                }
+            </strong>
+           </pre>
+        </section><br>
+
+        <section id="nine">
+        <h2>Break</h2>
+        <br>
+        <p>You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.</p>
+        <br>
+        <p>The break statement can also be used to jump out of a loop.</p>
+        <br>
+        <p>This example jumps out of the for loop when i is equal to 4:</p>
+         <br>
+
+         <h3>Example</h3>
+         <pre>
+            <strong>
+                int i;
+
+                for (i = 0; i < 10; i++) {
+                  if (i == 4) {
+                    break;
+                  }
+                
+                  printf("%d\n", i);
+                }            
+            </strong>
+         </pre>
+          <br>
+
+          <h2>Continue</h2>
+          <br>
+          <p>The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.</p>
+           <br>
+           <p>This example skips the value of 4:</p>
+           <br>
+
+           <h3>Example</h3>
+           <pre>
+            <strong>
+                int i;
+
+                for (i = 0; i < 10; i++) {
+                  if (i == 4) {
+                    continue;
+                  }
+                  printf("%d\n", i);
+                } 
+            </strong>
+           </pre>
+           <br>
+
+           <h2>Break and Continue in While Loop</h2>
+           <br>
+           <p>You can also use break and continue in while loops:</p>
+           <br>
+
+           <h3>Break Example</h3>
+           <pre>
+            <strong>
+                int i = 0;
+
+                while (i < 10) {
+                  if (i == 4) {
+                    break;
+                  }
+                  printf("%d\n", i);
+                  i++;
+                
+                }
+            </strong>
+            </pre>
+            <br><br>
+            <h3>Continue Example</h3>
+            <pre>
+                <strong>
+                    int i = 0;
+
+                    while (i < 10) {
+                      if (i == 4) {
+                        i++;
+                        continue;
+                      }
+                      printf("%d\n", i);
+                      i++;
+                    
+                    }                    
+                </strong>
+            </pre>
+        </section>
+
+        <section id="ten">
+           <h2>Arrays</h2>
+           <br>
+           <p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.</p>
+           <br>
+           <p>To create an array, define the data type (like int) and specify the name of the array followed by <strong>square brackets []. </strong></p>
+            <br>
+            <p>To insert values to it, use a comma-separated list inside curly braces, and make sure all values are of the same data type:</p>
+            <br>
+            <pre>
+                <strong>
+                    int myNumbers[] = {25, 50, 75, 100};
+                </strong>
+             </pre>
+             <br>
+
+             <h2>Access the Elements of an Array</h2>
+             <br>
+             <p>To access an array element, refer to its index number.</p>
+             <br>
+             <p>Array indexes start with <strong>0:</strong> [0] is the first element. [1] is the second element, etc.</p>
+             <br>
+             <p>This statement accesses the value of the <strong>first element [0] </strong> in myNumbers:</p>
+             <br>
+             <h3>Example</h3>
+             <pre>
+                <strong>
+                    int myNumbers[] = {25, 50, 75, 100};
+                    printf("%d", myNumbers[0]);
+                    
+                    // Outputs 25
+                </strong>
+             </pre>
+             <br>
+
+             <h2>Change an Array Element</h2>
+             <br>
+             <p>To change the value of a specific element, refer to the index number:</p>
+             <br>
+
+             <h3>Example</h3>
+             <pre>
+                <strong>
+                    myNumbers[0] = 33;
+                </strong>
+             </pre>
+             <br>
+
+             <h3>Example</h3>
+             <pre>
+                <strong>
+                    int myNumbers[] = {25, 50, 75, 100};
+                    myNumbers[0] = 33;
+                    
+                    printf("%d", myNumbers[0]);
+                    
+                    // Now outputs 33 instead of 25
+                </strong>
+             </pre>
+             <br>
+             <h2>Loop Through an Array</h2>
+             <br>
+             <p>You can loop through the array elements with the for loop. </p>
+             <br>
+             <p>The following example outputs all elements in the myNumbers array:</p>
+              <br>
+
+              <h3>Example</h3>
+               <pre>
+                <strong>
+                    int myNumbers[] = {25, 50, 75, 100};
+                    int i;
+                    
+                    for (i = 0; i < 4; i++) {
+                      printf("%d\n", myNumbers[i]);
+                    }
+                </strong>
+               </pre>
+               <br>
+               <h2>Set Array Size</h2>
+               <br>
+               <p>Another common way to create arrays, is to specify the size of the array, and add elements later:</p>
+               <br>
+               <h3>Example</h3>
+               <pre>
+                <strong>
+                    // Declare an array of four integers:
+                    int myNumbers[4];
+                    
+                    // Add elements
+                    myNumbers[0] = 25;
+                    myNumbers[1] = 50;
+                    myNumbers[2] = 75;
+                    myNumbers[3] = 100;                    
+                </strong>
+               </pre>
+        </section><br>
+
+        <section id="eleven">
+            <h2>Strings</h2>
+            <br>
+            <p>Strings are used for storing text/characters.</p>
+            <br>
+            <p>For example, "Hello World" is a string of characters.For example, "Hello World" is a string of characters.</p>
+            <br>
+            <p>Unlike many other programming languages, C does not have a String type to easily create string variables. Instead, you must use the char type and create an array of characters to make a string in C:</p>
+            <br>
+            <pre>
+                <strong>
+                    char greetings[] = "Hello World!";
+                </strong>
+            </pre>
+            <br>
+            <p>Note that you have to use double quotes ("").</p>
+            <p>To output the string, you can use the printf() function together with the format specifier %s to tell C that we are now working with strings:</p>
+            <br>
+
+            <h3>Example</h3>
+            <pre>
+                <strong>
+                    char greetings[] = "Hello World!";
+                    printf("%s", greetings);
+                </strong>
+            </pre>
+            <br>
+
+            <h2>Access Strings</h2>
+            <p>Since strings are actually arrays in C, you can access a string by referring to its index number inside square brackets [].</p>
+            <br>
+            <p>This example prints the <strong>first character (0)</strong> in <strong>greetings:</strong></p> 
+            <br>
+            <h3>Example</h3>
+            <pre>
+                <strong>
+                    char greetings[] = "Hello World!";
+                    printf("%c", greetings[0]);
+                </strong>
+            </pre>
+            <br>
+            <h2>Modify Strings</h2>
+            <br>
+            <p>To change the value of a specific character in a string, refer to the index number, and use <strong>single quotes:</strong></p>
+            <br>
+            <h3>Example</h3>
+             <pre>
+                <strong>
+                    char greetings[] = "Hello World!";
+                    greetings[0] = 'J';
+                    printf("%s", greetings);
+                    // Outputs Jello World! instead of Hello World!
+                </strong>
+             </pre>
+             <br>
+             <h2>Loop Through a String</h2>
+             <br>
+             <p>You can also loop through the characters of a string, using a for loop:</p>
+              <br>
+             <h3>Example</h3>                           
+              <pre>
+                <strong>
+                    char carName[] = "Volvo";
+                    int i;
+                    
+                    for (i = 0; i < 5; ++i) {
+                      printf("%c\n", carName[i]);
+                    }
+                </strong>
+              </pre>   
+        </section><br>
+
+        
+        <section id="Twelve">
+            <h2>User Input</h2>
+            <br>
+            <p>You have already learned that printf() is used to output values in C.</p>
+            <br>
+            <p>To get user input, you can use the scanf() function:</p>
+            <br>
+            <h3>Example</h3><br>
+               <p>Output a number entered by the user:</p>
+             <pre>
+                <strong>
+                    // Create an integer variable that will store the number we get from the user
+                    int myNum;
+                    
+                    // Ask the user to type a number
+                    printf("Type a number: \n");
+                    
+                    // Get and save the number the user types
+                    scanf("%d", &myNum);
+                    
+                    // Output the number the user typed
+                    printf("Your number is: %d", myNum);
+                </strong>
+             </pre>
+             <br>
+
+             <h2>Multiple Inputs</h2>
+             <br>
+             <p>The scanf() function also allow multiple inputs (an integer and a character in the following example):</p>
+             <br>
+             <h3>Example</h3>
+             <pre>
+                <strong>
+                    // Create an int and a char variable
+                    int myNum;
+                    char myChar;
+                    
+                    // Ask the user to type a number AND a character
+                    printf("Type a number AND a character and press enter: \n");
+                    
+                    // Get and save the number AND character the user types
+                    scanf("%d %c", &myNum, &myChar);
+                    
+                    // Print the number
+                    printf("Your number is: %d\n", myNum);
+                    
+                    // Print the character
+                    printf("Your character is: %c\n", myChar);
+                </strong>
+             </pre>
+            
+             <h2>Take String Input</h2>
+             <br>
+             <p>You can also get a string entered by the user:</p>
+             <br>
+             <h3>Example</h3>  
+             <p>Output the name of a user:</p>
+             <pre>
+                <strong>
+                    // Create a string
+                    char firstName[30];
+                    
+                    // Ask the user to input some text
+                    printf("Enter your first name: \n");
+                    
+                    // Get and save the text
+                    scanf("%s", firstName);
+                    
+                    // Output the text
+                    printf("Hello %s", firstName);                    
+                </strong>
+             </pre>  
+        </section>
+
+        <section id="Thirteen">
+            <h2>Memory Address</h2>
+            <br>
+            <p>When a variable is created in C, a memory address is assigned to the variable.</p>
+            <br>
+            <p>The memory address is the location of where the variable is stored on the computer. </p>
+            <br>
+            <p>When we assign a value to the variable, it is stored in this memory address. </p>
+            <br>
+            <p>To access it, use the reference operator (&), and the result represents where the variable is stored:</p>
+             <br>
+
+             <h3>Example</h3>
+              <pre>
+                <strong>
+                    int myAge = 43;
+                    printf("%p", &m
+                    yAge); // Outputs 0x7ffe5367e044                    
+                </strong>
+              </pre>
+        </section><br>
+
+        <section id="Fourteen">
+            <h2>Creating Pointers</h2>
+            <br>
+            <p>You learned from the previous chapter, that we can get the memory address of a variable with the reference operator &:</p>
+            <br>
+
+            <h3>Example</h3>
+             <pre>
+                <strong>
+                    int myAge = 43; // an int variable
+
+                    printf("%d", myAge);  // Outputs the value of myAge (43)
+                    printf("%p", &myAge); // Outputs t
+                    he memory address of myAge (0x7ffe5367e044)                    
+                </strong>
+             </pre>
+              <br>
+              <p>A pointer is a variable that stores the memory address of another variable as its value.</p>
+              <br>
+              <p>A pointer variable points to a data type (like int) of the same type, and is created with the * operator.</p>
+              <br>    
+              <p>The address of the variable you are working with is assigned to the pointer:</p>
+              <br>
+
+              <h3>Example</h3>
+               <pre>
+                <strong>
+                    int myAge = 43;     // An int variable
+                    int* ptr = &myAge;  // A pointer variable, with the name ptr, that stores the address of myAge
+                    
+                    // Output the value of myAge (43)
+                    printf("%d\n", myAge);
+                    
+                    // Output the memory address of myAge (0x7ffe5367e044)
+                    printf("%p\n", &myAge);
+                    
+                    // Output the memory address of myAge with the pointer (0x7ffe5367e044)
+                    printf("%p\n", ptr);
+                </strong>
+               </pre>
+               <br>
+
+               <h3>Example explained</h3>
+               <br>
+               <p>Create a pointer variable with the name ptr, that points to an int variable (myAge). Note that the type of the pointer has to match the type of the variable you're working with (int in our example).</p>
+                <br>
+               <p>Use the & operator to store the memory address of the myAge variable, and assign it to the pointer.</p>
+                <br>
+               <p>Now, ptr holds the value of myAge's memory address.</p>
+           </section>
+        </div>
+    </main>
+
+
+   <footer id="series">    
+    <div class="Detail">
+     
+      <div class="for">
+       
+        <div class="right">
+          <table>
+            <tr>
+              <th>Comapny</th>
+              <th>Explore</th>
+              <th>language</th>
+            </tr>
+            
+            <tr>
+               <a href=""><td>About us</td></a>
+               <a href=""><td>Job</td></a>
+               <a href=""><td>Python</td></a>
+            </tr>
+          
+            <tr>
+              <a href=""><td>Legal</td></a>
+              <a href=""><td>challenge</td></a>
+              <a href=""><td>Java</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>Careers</td></a>
+            <a href=""><td>H-A-Thon</td></a>
+            <a href=""><td>c++</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>In media</td></a>
+            <a href=""><td>Contest</td></a>
+            <a href=""><td>PHP</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>Contact us</td></a>
+            <a href=""><td>Classes</td></a>
+            <a href=""><td>MYSQL</td></a>
+         </tr>
+      
+       </table>
+          
+      </div> 
+
+
+
+      <div class="left">
+       <form>
+       <h1>Contact Us </h1>
+
+        <label for="yourname">Full Name:</label>
+        <input type="text" id="yourname" name="Uname" placeholder="Enter Your Name" class="equal">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Emailid" class="equal">
+        <br><br>
+
+        <label for="Contact">Phone No:</label>
+        <input type="tel" id="Contact" name="tel" class="equal">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" id="others" name="Gender" value="Other">
+        <label for="others">Other</label>
+        <br><br>
+
+        <label for="msg">Message</label>
+        <textarea name="Mag" id="msg" rows="4" cols="45"></textarea>
+        <br><br>
+
+        <button>submit</button>
+
+       </form>
+ 
+     </div>
+    
+    </div>
+
+    <p>&copy; 2024 CodeMastery. All rights reserved.</p>    
+
+   </div> 
+
+</footer>
+</body>
+</html>
