@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMastery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="Home">
+                <div class="left">
+                    <h1>CodeMastery</h1>
+                </div>
+
+                <nav>
+                    <div class="tut">
+                        <a href="toutr.html"><button>Tutorial</button></a>
+                        <a href="#series"><button>Services</button></a>
+                        <a href="tutorials.html"><button>Certificates</button></a>
+                    </div>
+                </nav>
+
+                <div class="serch">
+                    <input type="text" placeholder="Search" class="searching">
+                </div>
+            </div>
+
+           
+          <nav>
+            <div class="lange">
+                <a href="index.html"><button>C</button></a>
+                <a href="cpp.html"><button>CPP</button></a>
+                <a href="HTML.html"><button>HTML</button></a>
+                <a href="Css.html"><button>CSS</button></a>
+                <a href="js.html"><button>JavaScript</button></a>
+                <a href="java.html"><button>Java</button></a>
+                <a href="python.html"><button>Python</button></a>
+                <a href="csharp.html"><button>C#</button></a>
+                <a href="PHP.html"><button>PHP</button></a>
+                <a href="MYSQL.html"><button>MySQL</button></a>
+                <a href="DSA.html"><button>DSA</button></a>
+            </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <button><a href="#one">DSA Introduction</a></button>
+            <button><a href="#two">Arrays</a></button>
+            <button><a href="#three">Linked Lists</a></button>
+            <button><a href="#four">Stacks</a></button>
+            <button><a href="#five">Queues</a></button>
+            <button><a href="#six">Trees</a></button>
+            <button><a href="#seven">Sorting Algorithms</a></button>
+            <button><a href="#eight">Searching Algorithms</a></button>
+            <button><a href="#nine">Graphs</a></button>
+            <button><a href="#ten">Dynamic Programming</a></button>
+            <button><a href="#eleven">Greedy Algorithms</a></button>
+            <button><a href="#twelve">Heaps</a></button>
+            <button><a href="#thirteen">Trie</a></button>
+            <button><a href="#fourteen">Segment Trees</a></button>
+        </div>
+
+
+        <div class="mai">
+            <!-- DSA Introduction -->
+            <section id="one">
+                <h1>DSA Introduction</h1>
+                <p>Data Structures and Algorithms (DSA) is a fundamental topic in computer science. It forms the core of problem-solving techniques, and mastering it is essential for acing coding interviews and competitive programming.</p>
+                <br>
+                <h3>Why Learn DSA?</h3>
+                <ul>
+                    <li><strong>Efficient Problem Solving:</strong> DSA helps in designing algorithms that run efficiently in terms of time and space.</li>
+                    <li><strong>Critical for Interviews:</strong> Most tech companies ask DSA-based questions in their coding interviews.</li>
+                    <li><strong>Foundational for Other Topics:</strong> Concepts of DSA are the basis of various advanced topics like Machine Learning, AI, and Operating Systems.</li>
+                </ul>
+                <br>
+            </section>
+
+            <!-- Arrays -->
+            <section id="two">
+                <h2>Arrays</h2>
+                <p>An array is a collection of elements identified by index or key. The elements of an array are stored in contiguous memory locations.</p>
+                <br>
+                <h4>Operations on Arrays:</h4>
+                <ul>
+                    <li><strong>Accessing:</strong> Access elements using their index.</li>
+                    <li><strong>Insertion:</strong> Insert an element at a specific index.</li>
+                    <li><strong>Deletion:</strong> Remove an element from a specific index.</li>
+                    <li><strong>Searching:</strong> Search for an element in the array.</li>
+                    <li><strong>Sorting:</strong> Sort the elements in the array in ascending or descending order.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    int arr[] = {1, 2, 3, 4, 5};
+                    cout << arr[2]; // Output: 3
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Linked Lists -->
+            <section id="three">
+                <h2>Linked Lists</h2>
+                <p>A linked list is a linear data structure where elements are stored in nodes. Each node contains two parts: data and a reference (or link) to the next node in the sequence.</p>
+                <br>
+                <h4>Types of Linked Lists:</h4>
+                <ul>
+                    <li><strong>Single Linked List:</strong> Each node points to the next node.</li>
+                    <li><strong>Doubly Linked List:</strong> Each node has two pointers, one pointing to the next node and another to the previous node.</li>
+                    <li><strong>Circular Linked List:</strong> The last node points to the first node.</li>
+                </ul><br>
+
+                <h4>Operations on Linked Lists:</h4>
+                <ul>
+                    <li><strong>Insertion:</strong> Insert nodes at the beginning, end, or at a specific position.</li>
+                    <li><strong>Deletion:</strong> Delete a node from the list.</li>
+                    <li><strong>Traversal:</strong> Traverse the list and print the values.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    struct Node {
+                        int data;
+                        Node* next;
+                    };
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Stacks -->
+            <section id="four">
+                <h2>Stacks</h2>
+                <p>A stack is a linear data structure that follows the Last In First Out (LIFO) principle. The last element inserted is the first one to be removed.</p>
+                <br>
+                <h4>Operations on Stacks:</h4>
+                <ul>
+                    <li><strong>Push:</strong> Insert an element at the top of the stack.</li>
+                    <li><strong>Pop:</strong> Remove the top element of the stack.</li>
+                    <li><strong>Peek:</strong> Get the top element without removing it.</li>
+                    <li><strong>IsEmpty:</strong> Check if the stack is empty.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    stack<int> s;
+                    s.push(10);
+                    s.push(20);
+                    cout << s.top(); // Output: 20
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Queues -->
+            <section id="five">
+                <h2>Queues</h2>
+                <p>A queue is a linear data structure that follows the First In First Out (FIFO) principle. The first element inserted is the first one to be removed.</p>
+                <br>
+                <h4>Operations on Queues:</h4>
+                <ul>
+                    <li><strong>Enqueue:</strong> Add an element to the end of the queue.</li>
+                    <li><strong>Dequeue:</strong> Remove an element from the front of the queue.</li>
+                    <li><strong>Front:</strong> Get the front element without removing it.</li>
+                    <li><strong>IsEmpty:</strong> Check if the queue is empty.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    queue<int> q;
+                    q.push(10);
+                    q.push(20);
+                    cout << q.front(); // Output: 10
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Trees -->
+            <section id="six">
+                <h2>Trees</h2>
+                <p>A tree is a hierarchical data structure consisting of nodes, where each node has a value and a list of references to other nodes (children). The top node is called the root.</p>
+                <br>
+                <h4>Types of Trees:</h4>
+                <ul>
+                    <li><strong>Binary Tree:</strong> Each node has at most two children.</li>
+                    <li><strong>Binary Search Tree:</strong> A binary tree with the left child smaller and the right child greater than the parent node.</li>
+                    <li><strong>AVL Tree:</strong> A self-balancing binary search tree.</li>
+                    <li><strong>Heap:</strong> A complete binary tree used for efficient retrieval of the smallest/largest element.</li>
+                </ul><br>
+
+                <h4>Traversal Methods:</h4>
+                <ul>
+                    <li><strong>In-order:</strong> Left, Root, Right</li>
+                    <li><strong>Pre-order:</strong> Root, Left, Right</li>
+                    <li><strong>Post-order:</strong> Left, Right, Root</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    struct Node {
+                        int data;
+                        Node* left;
+                        Node* right;
+                    };
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Sorting Algorithms -->
+            <section id="seven">
+                <h2>Sorting Algorithms</h2>
+                <p>Sorting algorithms are used to arrange elements in a specific order (ascending or descending).</p>
+                <br>
+                <h4>Common Sorting Algorithms:</h4>
+                <ul>
+                    <li><strong>Bubble Sort:</strong> Repeatedly swaps adjacent elements if they are in the wrong order.</li>
+                    <li><strong>Selection Sort:</strong> Selects the smallest element from the unsorted portion and swaps it with the first unsorted element.</li>
+                    <li><strong>Insertion Sort:</strong> Builds the sorted array one item at a time by inserting the current item into its correct position.</li>
+                    <li><strong>Merge Sort:</strong> Divides the array into halves, recursively sorts each half, and merges them.</li>
+                    <li><strong>Quick Sort:</strong> Divides the array using a pivot element and recursively sorts the left and right partitions.</li>
+                </ul><br>
+
+                <h4>Example (Bubble Sort):</h4>
+                <pre><strong>
+                    void bubbleSort(int arr[], int n) {
+                        for (int i = 0; i < n-1; i++) {
+                            for (int j = 0; j < n-i-1; j++) {
+                                if (arr[j] > arr[j+1]) {
+                                    swap(arr[j], arr[j+1]);
+                                }
+                            }
+                        }
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Searching Algorithms -->
+            <section id="eight">
+                <h2>Searching Algorithms</h2>
+                <p>Searching algorithms are used to find a particular element in a data structure.</p>
+                <br>
+                <h4>Common Searching Algorithms:</h4>
+                <ul>
+                    <li><strong>Linear Search:</strong> Searches through each element one by one until the target is found.</li>
+                    <li><strong>Binary Search:</strong> Searches in a sorted array by repeatedly dividing the search interval in half.</li>
+                </ul><br>
+
+                <h4>Example (Linear Search):</h4>
+                <pre><strong>
+                    int linearSearch(int arr[], int n, int target) {
+                        for (int i = 0; i < n; i++) {
+                            if (arr[i] == target) {
+                                return i;
+                            }
+                        }
+                        return -1;
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Graphs -->
+            <section id="nine">
+                <h2>Graphs</h2>
+                <p>A graph is a collection of nodes (vertices) and edges that connect them. Graphs can be used to represent various real-world situations like networks, social media, etc.</p>
+                <br>
+                <h4>Graph Types:</h4>
+                <ul>
+                    <li><strong>Directed Graph:</strong> Edges have a direction.</li>
+                    <li><strong>Undirected Graph:</strong> Edges do not have a direction.</li>
+                    <li><strong>Weighted Graph:</strong> Edges have weights.</li>
+                </ul><br>
+
+                <h4>Graph Traversal:</h4>
+                <ul>
+                    <li><strong>DFS:</strong> Depth-first search explores as far as possible along a branch before backtracking.</li>
+                    <li><strong>BFS:</strong> Breadth-first search explores all neighbors at the present depth level before moving on to the next level.</li>
+                </ul><br>
+
+                <h4>Example (DFS):</h4>
+                <pre><strong>
+                    void dfs(int v) {
+                        visited[v] = true;
+                        for (int u : adj[v]) {
+                            if (!visited[u]) dfs(u);
+                        }
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Dynamic Programming -->
+            <section id="ten">
+                <h2>Dynamic Programming</h2>
+                <p>Dynamic programming is a method for solving complex problems by breaking them down into simpler subproblems. It is used when the problem has overlapping subproblems and optimal substructure.</p>
+                <br>
+                <h4>Example (Fibonacci Sequence):</h4>
+                <pre><strong>
+                    int fib(int n) {
+                        int dp[n+1];
+                        dp[0] = 0;
+                        dp[1] = 1;
+                        for (int i = 2; i <= n; i++) {
+                            dp[i] = dp[i-1] + dp[i-2];
+                        }
+                        return dp[n];
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Greedy Algorithms -->
+            <section id="eleven">
+                <h2>Greedy Algorithms</h2>
+                <p>Greedy algorithms make locally optimal choices at each step with the hope of finding a global optimum.</p>
+                <br>
+                <h4>Example (Activity Selection Problem):</h4>
+                <pre><strong>
+                    void activitySelection(int start[], int end[], int n) {
+                        sort(activities, activities+n, compare);
+                        int lastEndTime = -1;
+                        for (int i = 0; i < n; i++) {
+                            if (start[i] >= lastEndTime) {
+                                lastEndTime = end[i];
+                                cout << "Activity " << i << " selected\n";
+                            }
+                        }
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Heaps -->
+            <section id="twelve">
+                <h2>Heaps</h2>
+                <p>A heap is a special tree-based data structure that satisfies the heap property. In a max heap, the key of each node is greater than or equal to the keys of its children, and in a min heap, the key of each node is less than or equal to the keys of its children.</p>
+                <br>
+                <h4>Operations on Heaps:</h4>
+                <ul>
+                    <li><strong>Insert:</strong> Add an element to the heap while maintaining the heap property.</li>
+                    <li><strong>Extract:</strong> Remove the root element (max/min) from the heap and adjust the heap.</li>
+                    <li><strong>Peek:</strong> Get the root element (max/min) without removing it.</li>
+                </ul><br>
+
+                <h4>Example (Max Heap):</h4>
+                <pre><strong>
+                    void insertMaxHeap(vector<int>& heap, int val) {
+                        heap.push_back(val);
+                        int i = heap.size() - 1;
+                        while (i > 0 && heap[i] > heap[(i - 1) / 2]) {
+                            swap(heap[i], heap[(i - 1) / 2]);
+                            i = (i - 1) / 2;
+                        }
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Trie -->
+            <section id="thirteen">
+                <h2>Trie</h2>
+                <p>A trie (pronounced "try") is a tree-like data structure used to efficiently store a dynamic set of strings, typically for searching. It's often used in scenarios like autocomplete or spell-checking.</p>
+                <br>
+                <h4>Operations on Trie:</h4>
+                <ul>
+                    <li><strong>Insert:</strong> Add a word to the trie.</li>
+                    <li><strong>Search:</strong> Check if a word exists in the trie.</li>
+                    <li><strong>Delete:</strong> Remove a word from the trie.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    struct TrieNode {
+                        TrieNode* children[26];
+                        bool isEndOfWord;
+                    };
+
+                    void insert(TrieNode* root, string word) {
+                        TrieNode* node = root;
+                        for (char c : word) {
+                            int index = c - 'a';
+                            if (node->children[index] == nullptr)
+                                node->children[index] = new TrieNode();
+                            node = node->children[index];
+                        }
+                        node->isEndOfWord = true;
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- Segment Trees -->
+            <section id="fourteen">
+                <h2>Segment Trees</h2>
+                <p>A segment tree is a binary tree used for storing intervals or segments. It allows querying the segment tree for aggregate functions (such as sum or minimum) over a range of elements in O(log n) time.</p>
+                <br>
+                <h4>Operations on Segment Trees:</h4>
+                <ul>
+                    <li><strong>Build:</strong> Construct the segment tree from the array.</li>
+                    <li><strong>Query:</strong> Retrieve the result for a range query.</li>
+                    <li><strong>Update:</strong> Update an element in the array and adjust the segment tree accordingly.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    void buildSegmentTree(vector<int>& segTree, int arr[], int start, int end, int node) {
+                        if (start == end) {
+                            segTree[node] = arr[start];
+                        } else {
+                            int mid = (start + end) / 2;
+                            buildSegmentTree(segTree, arr, start, mid, 2 * node + 1);
+                            buildSegmentTree(segTree, arr, mid + 1, end, 2 * node + 2);
+                            segTree[node] = segTree[2 * node + 1] + segTree[2 * node + 2];
+                        }
+                    }
+                </strong></pre>
+                <br>
+            </section>
+        </div>
+    </main>
+
+
+    <footer id="series">    
+        <div class="Detail">
+         
+          <div class="for">
+           
+            <div class="right">
+              <table>
+                <tr>
+                  <th>Comapny</th>
+                  <th>Explore</th>
+                  <th>language</th>
+                </tr>
+                
+                <tr>
+                   <a href=""><td>About us</td></a>
+                   <a href=""><td>Job</td></a>
+                   <a href=""><td>Python</td></a>
+                </tr>
+              
+                <tr>
+                  <a href=""><td>Legal</td></a>
+                  <a href=""><td>challenge</td></a>
+                  <a href=""><td>Java</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Careers</td></a>
+                <a href=""><td>H-A-Thon</td></a>
+                <a href=""><td>c++</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>In media</td></a>
+                <a href=""><td>Contest</td></a>
+                <a href=""><td>PHP</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Contact us</td></a>
+                <a href=""><td>Classes</td></a>
+                <a href=""><td>MYSQL</td></a>
+             </tr>
+          
+           </table>
+              
+          </div> 
+    
+    
+    
+          <div class="left">
+           <form>
+           <h1>Contact Us </h1>
+    
+            <label for="yourname">Full Name:</label>
+            <input type="text" id="yourname" name="Uname" placeholder="Enter Your Name" class="equal">
+            <br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Emailid" class="equal">
+            <br><br>
+    
+            <label for="Contact">Phone No:</label>
+            <input type="tel" id="Contact" name="tel" class="equal">
+            <br><br>
+    
+            <label>Gender:</label>
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="others" name="Gender" value="Other">
+            <label for="others">Other</label>
+            <br><br>
+    
+            <label for="msg">Message</label>
+            <textarea name="Mag" id="msg" rows="4" cols="45"></textarea>
+            <br><br>
+    
+            <button>submit</button>
+    
+           </form>
+     
+         </div>
+        
+        </div>
+    
+        <p>&copy; 2024 CodeMastery. All rights reserved.</p>    
+    
+       </div> 
+    
+    </footer>
+
+
+
+
+</body>
+</html>

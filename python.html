@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMastery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      
+    <header>
+     <div class="head">
+        
+      <div class="Home">
+         <div class="left">
+          <h1>CodeMastery</h1>
+         </div>
+  
+         <nav>
+           <div class="tut">
+             <a href="toutr.html"><button>Tutorial</button></a>
+             <a href="#series"><button>Services</button></a>
+             <a href="tutorials.html"><button>Certificates</button></a>
+            </div>
+          </nav>
+
+            <div class="serch">
+                <input type="text" placeholder="Search" class="searching">
+            </div> 
+
+        </div> 
+
+         
+        <nav>
+            <div class="lange">
+                <a href="index.html"><button>C</button></a>
+                <a href="cpp.html"><button>CPP</button></a>
+                <a href="HTML.html"><button>HTML</button></a>
+                <a href="Css.html"><button>CSS</button></a>
+                <a href="js.html"><button>JavaScript</button></a>
+                <a href="java.html"><button>Java</button></a>
+                <a href="python.html"><button>Python</button></a>
+                <a href="csharp.html"><button>C#</button></a>
+                <a href="PHP.html"><button>PHP</button></a>
+                <a href="MYSQL.html"><button>MySQL</button></a>
+                <a href="DSA.html"><button>DSA</button></a>
+            </div>
+            </nav>
+      </div>
+    </header>
+  
+    <main>
+
+        <div class="sidebar">
+        <button><a href="#one">Python Introduction</a></button> 
+        <button><a href="#two">Python Data Types</a></button> 
+        <button><a href="#three">Python Operators</a></button> 
+        <button><a href="#four">Python Booleans</a></button> 
+        <button><a href="#five">Python If ... Else</a></button> 
+        <button><a href="#six">Python While Loop</a></button> 
+        <button><a href="#seven">Python For Loop</a></button> 
+        <button><a href="#eight">Python Break and Continue</a></button> 
+        <button><a href="#nine">Python Lists</a></button> 
+        <button><a href="#ten">Python Strings</a></button> 
+        <button><a href="#eleven">Python User Input</a></button> 
+        <button><a href="#twelve">Python Functions</a></button> 
+        <button><a href="#thirteen">Python Dictionaries</a></button> 
+        <button><a href="#fourteen">Python File I/O</a></button> 
+        </div>
+
+        <div class="mai">
+            <section id="one">
+                <h1>Python Introduction</h1>
+                <ul>
+                    <li>Python is a high-level, interpreted programming language developed by Guido van Rossum and released in 1991.</li>
+                    <li>Python is known for its simplicity and readability, making it an ideal choice for beginners and experts alike.</li>
+                    <li>Python is used in a variety of domains, including web development, data science, artificial intelligence, scientific computing, and more.</li>
+                </ul>
+                <br>
+                <h3>Why Learn Python?</h3>
+                <ul>
+                    <li><strong>Ease of Learning:</strong> Python's syntax is simple and easy to understand.</li>
+                    <li><strong>Extensive Libraries:</strong> Python has a wide range of libraries and frameworks for various domains, including web development (Django, Flask), data science (Pandas, NumPy), and more.</li>
+                    <li><strong>Versatility:</strong> Python can be used for web development, machine learning, automation, and more.</li>
+                    <li><strong>Strong Community:</strong> Python has an active community of developers, which makes it easier to get help and support.</li>
+                </ul>
+                <br>
+            </section>
+
+            <section id="two">
+                <h2>Data Types in Python</h2>
+                <p>Python supports several data types, including:</p>
+                <br>
+                <h4>Basic Data Types:</h4>
+                <ul>
+                    <li><strong>int:</strong> Integer type, used to represent whole numbers.</li>
+                    <li><strong>float:</strong> Floating point type, used to represent decimal numbers.</li>
+                    <li><strong>str:</strong> String type, used to represent text.</li>
+                    <li><strong>bool:</strong> Boolean type, used to represent True or False values.</li>
+                    <li><strong>list:</strong> A collection of ordered, mutable elements.</li>
+                    <li><strong>tuple:</strong> An immutable collection of ordered elements.</li>
+                    <li><strong>dict:</strong> Dictionary type, used to store key-value pairs.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    age = 25
+                    height = 5.9
+                    name = "John"
+                    is_adult = True
+                    fruits = ["apple", "banana", "cherry"]
+                </strong></pre>
+                <br>
+            </section>
+
+            <section id="three">
+                <h2>Python Operators</h2>
+                <p>Python supports various types of operators:</p>
+                <br>
+                <h4>Types of Operators:</h4>
+                <ul>
+                    <li><strong>Arithmetic Operators:</strong> +, -, *, /, %, //, **</li>
+                    <li><strong>Relational Operators:</strong> ==, !=, >, <, >=, <=</li>
+                    <li><strong>Logical Operators:</strong> and, or, not</li>
+                    <li><strong>Assignment Operators:</strong> =, +=, -=, *=, /=</li>
+                    <li><strong>Membership Operators:</strong> in, not in</li>
+                </ul>
+                <br>
+            </section>
+
+            <section id="four">
+                <h2>Booleans in Python</h2>
+                <p>In Python, the boolean type represents the two truth values: <strong>True</strong> and <strong>False</strong>.</p>
+                <h3>Example:</h3>
+                <pre><strong>
+                    is_even = True
+                    is_odd = False
+
+                    if is_even:
+                        print("The number is even.")
+                    else:
+                        print("The number is odd.")
+                </strong></pre>
+                <br>
+            </section>
+
+            <section id="five">
+                <h2>Python If ... Else</h2>
+                <p>In Python, you can use if, elif, and else to make decisions in your programs.</p>
+                <br>
+                <h3>Syntax:</h3>
+                <pre><strong>
+                    if condition:
+                        # Code to execute if the condition is True
+                    elif another_condition:
+                        # Code to execute if the second condition is True
+                    else:
+                        # Code to execute if no condition is True
+                </strong></pre>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    age = 18
+                    if age >= 18:
+                        print("You are an adult.")
+                    else:
+                        print("You are a minor.")
+                </strong></pre>
+                <br>
+            </section>
+
+    
+            <section id="six">
+                <h2>Python While Loop</h2>
+                <p>While loops in Python are used to execute a block of code repeatedly as long as a given condition is True.</p>
+                <br>
+                <h3>Syntax:</h3>
+                <pre><strong>
+                    while condition:
+                        # Code to execute
+                </strong></pre>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    count = 0
+                    while count < 5:
+                        print("Count:", count)
+                        count += 1
+                </strong></pre>
+                <br>
+            </section>
+
+            <section id="seven">
+                <h2>Python Break and Continue</h2>
+                <p>Python provides the <strong>break</strong> and <strong>continue</strong> statements to control the flow of loops.</p>
+                <br>
+                <h3>break Statement:</h3>
+                <p>The <strong>break</strong> statement is used to exit the current loop prematurely.</p>
+                <br>
+                <h3>continue Statement:</h3>
+                <p>The <strong>continue</strong> statement is used to skip the rest of the code inside a loop for the current iteration and move to the next iteration.</p>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    for i in range(1, 6):
+                        if i == 3:
+                            continue  # Skip the rest of the loop when i is 3
+                        print(i)
+                    # Output: 1, 2, 4, 5
+                </strong></pre>
+                <br>
+            </section>
+
+            
+            <section id="eight">
+                <h2>Python Lists</h2>
+                <p>A list in Python is a mutable, ordered collection of elements. You can store multiple items in a single variable using lists.</p>
+                <br>
+                <h3>Creating a List:</h3>
+                <pre><strong>
+                    fruits = ["apple", "banana", "cherry"]
+                    numbers = [1, 2, 3, 4, 5]
+                </strong></pre>
+                <br>
+                <h3>List Operations:</h3>
+                <ul>
+                    <li><strong>append(x):</strong> Adds an item to the end of the list.</li>
+                    <li><strong>remove(x):</strong> Removes the first occurrence of the item from the list.</li>
+                    <li><strong>len():</strong> Returns the number of items in the list.</li>
+                    <li><strong>sort():</strong> Sorts the list in ascending order.</li>
+                </ul>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    fruits = ["apple", "banana", "cherry"]
+                    fruits.append("orange")  # Adds "orange" to the list
+                    print(fruits)
+                    # Output: ['apple', 'banana', 'cherry', 'orange']
+                </strong></pre>
+                <br>
+            </section>
+
+           
+            <section id="nine">
+                <h2>Python Strings</h2>
+                <p>In Python, strings are sequences of characters. Strings are immutable, meaning you cannot modify a string after it's created.</p>
+                <br>
+                <h3>Creating a String:</h3>
+                <pre><strong>
+                    greeting = "Hello, World!"
+                    name = 'John'
+                </strong></pre>
+                <br>
+                <h3>String Operations:</h3>
+                <ul>
+                    <li><strong>len():</strong> Returns the length of the string.</li>
+                    <li><strong>upper():</strong> Converts all characters to uppercase.</li>
+                    <li><strong>lower():</strong> Converts all characters to lowercase.</li>
+                    <li><strong>strip():</strong> Removes whitespace from both ends of the string.</li>
+                </ul>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    greeting = "  Hello, World!  "
+                    print(greeting.strip())  # Output: 'Hello, World!'
+                </strong></pre>
+                <br>
+            </section>
+
+            
+            <section id="ten">
+                <h2>Python User Input</h2>
+                <p>Python provides the <strong>input()</strong> function to allow the user to enter data during the execution of the program.</p>
+                <br>
+                <h3>Syntax:</h3>
+                <pre><strong>
+                    user_input = input("Enter your name: ")
+                    print("Hello, " + user_input)
+                </strong></pre>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    name = input("Enter your name: ")
+                    age = input("Enter your age: ")
+                    print(f"Hello {name}, you are {age} years old.")
+                </strong></pre>
+                <br>
+            </section>
+
+    
+            <section id="eleven">
+                <h2>Python Functions</h2>
+                <p>Functions in Python are defined using the <strong>def</strong> keyword. Functions allow you to group a block of code together and reuse it.</p>
+                <br>
+                <h3>Syntax:</h3>
+                <pre><strong>
+                    def function_name():
+                        # Code to be executed
+                </strong></pre>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    def greet(name):
+                        print(f"Hello, {name}!")
+                    
+                    greet("Alice")  # Output: Hello, Alice!
+                </strong></pre>
+                <br>
+            </section>
+
+            
+            <section id="twelve">
+                <h2>Python Dictionaries</h2>
+                <p>A dictionary in Python is an unordered collection of key-value pairs.</p>
+                <br>
+                <h3>Creating a Dictionary:</h3>
+                <pre><strong>
+                    person = {"name": "John", "age": 30, "city": "New York"}
+                </strong></pre>
+                <br>
+                <h3>Dictionary Operations:</h3>
+                <ul>
+                    <li><strong>keys():</strong> Returns a view object containing the keys of the dictionary.</li>
+                    <li><strong>values():</strong> Returns a view object containing the values of the dictionary.</li>
+                    <li><strong>get():</strong> Returns the value associated with the given key.</li>
+                </ul>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    person = {"name": "John", "age": 30, "city": "New York"}
+                    print(person["name"])  # Output: John
+                </strong></pre>
+                <br>
+            </section>
+
+            <section id="thirteen">
+                <h2>Python File I/O</h2>
+                <p>Python provides functions to work with files. You can read from and write to files using built-in functions like <strong>open()</strong>, <strong>read()</strong>, and <strong>write()</strong>.</p>
+                <br>
+                <h3>Opening a File:</h3>
+                <pre><strong>
+                    file = open("example.txt", "r")  # Open file in read mode
+                </strong></pre>
+                <br>
+                <h3>Reading from a File:</h3>
+                <pre><strong>
+                    content = file.read()  # Reads the entire content of the file
+                    print(content)
+                </strong></pre>
+                <br>
+                <h3>Writing to a File:</h3>
+                <pre><strong>
+                    file = open("example.txt", "w")  # Open file in write mode
+                    file.write("Hello, World!")  # Writes to the file
+                    file.close()
+                </strong></pre>
+                <br>
+            </section>
+
+            <section id="fourteen">
+                <h2>Python Classes and Objects</h2>
+                <p>Python is an object-oriented programming language. You can define classes to create objects, which are instances of those classes.</p>
+                <br>
+                <h3>Creating a Class:</h3>
+                <pre><strong>
+                    class Person:
+                        def __init__(self, name, age):
+                            self.name = name
+                            self.age = age
+                        
+                        def greet(self):
+                            print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+                    
+                    person1 = Person("Alice", 25)
+                    person1.greet()  # Output: Hello, my name is Alice and I am 25 years old.
+                </strong></pre>
+                <br>
+            </section>
+            
+        </div>
+    </main>
+
+    <footer id="series">    
+        <div class="Detail">
+         
+          <div class="for">
+           
+            <div class="right">
+              <table>
+                <tr>
+                  <th>Comapny</th>
+                  <th>Explore</th>
+                  <th>language</th>
+                </tr>
+                
+                <tr>
+                   <a href=""><td>About us</td></a>
+                   <a href=""><td>Job</td></a>
+                   <a href=""><td>Python</td></a>
+                </tr>
+              
+                <tr>
+                  <a href=""><td>Legal</td></a>
+                  <a href=""><td>challenge</td></a>
+                  <a href=""><td>Java</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Careers</td></a>
+                <a href=""><td>H-A-Thon</td></a>
+                <a href=""><td>c++</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>In media</td></a>
+                <a href=""><td>Contest</td></a>
+                <a href=""><td>PHP</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Contact us</td></a>
+                <a href=""><td>Classes</td></a>
+                <a href=""><td>MYSQL</td></a>
+             </tr>
+          
+           </table>
+              
+          </div> 
+    
+    
+    
+          <div class="left">
+           <form>
+           <h1>Contact Us </h1>
+    
+            <label for="yourname">Full Name:</label>
+            <input type="text" id="yourname" name="Uname" placeholder="Enter Your Name" class="equal">
+            <br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Emailid" class="equal">
+            <br><br>
+    
+            <label for="Contact">Phone No:</label>
+            <input type="tel" id="Contact" name="tel" class="equal">
+            <br><br>
+    
+            <label>Gender:</label>
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="others" name="Gender" value="Other">
+            <label for="others">Other</label>
+            <br><br>
+    
+            <label for="msg">Message</label>
+            <textarea name="Mag" id="msg" rows="4" cols="45"></textarea>
+            <br><br>
+    
+            <button>submit</button>
+    
+           </form>
+     
+         </div>
+        
+        </div>
+    
+        <p>&copy; 2024 CodeMastery. All rights reserved.</p>    
+    
+       </div> 
+    
+    </footer>
+
+</body>
+</html>

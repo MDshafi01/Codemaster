@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMastery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="Home">
+                <div class="left">
+                    <h1>CodeMastery</h1>
+                </div>
+
+                <nav>
+                    <div class="tut">
+                        <a href="toutr.html"><button>Tutorial</button></a>
+                        <a href="#series"><button>Services</button></a>
+                        <a href="tutorials.html"><button>Certificates</button></a>
+                    </div>
+                </nav>
+
+                <div class="serch">
+                    <input type="text" placeholder="Search" class="searching">
+                </div>
+            </div>
+
+            
+          <nav>
+            <div class="lange">
+                <a href="index.html"><button>C</button></a>
+                <a href="cpp.html"><button>CPP</button></a>
+                <a href="HTML.html"><button>HTML</button></a>
+                <a href="Css.html"><button>CSS</button></a>
+                <a href="js.html"><button>JavaScript</button></a>
+                <a href="java.html"><button>Java</button></a>
+                <a href="python.html"><button>Python</button></a>
+                <a href="csharp.html"><button>C#</button></a>
+                <a href="PHP.html"><button>PHP</button></a>
+                <a href="MYSQL.html"><button>MySQL</button></a>
+                <a href="DSA.html"><button>DSA</button></a>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <button><a href="#one">PHP Introduction</a></button>
+            <button><a href="#two">PHP Data Types</a></button>
+            <button><a href="#three">PHP Operators</a></button>
+            <button><a href="#four">PHP Booleans</a></button>
+            <button><a href="#five">PHP If ... Else</a></button>
+            <button><a href="#six">PHP While Loop</a></button>
+            <button><a href="#seven">PHP For Loop</a></button>
+            <button><a href="#eight">PHP Break and Continue</a></button>
+            <button><a href="#nine">PHP Arrays</a></button>
+            <button><a href="#ten">PHP Strings</a></button>
+            <button><a href="#eleven">PHP User Input</a></button>
+            <button><a href="#twelve">PHP Functions</a></button>
+            <button><a href="#thirteen">PHP Dictionaries</a></button>
+            <button><a href="#fourteen">PHP File I/O</a></button>
+        </div>
+
+        <div class="mai">
+            <!-- PHP Introduction -->
+            <section id="one">
+                <h1>PHP Introduction</h1>
+                <ul>
+                    <li>PHP is a popular general-purpose scripting language that is especially suited to web development.</li>
+                    <li>PHP was created by Rasmus Lerdorf in 1993 and is an open-source language.</li>
+                    <li>It can be embedded into HTML, making it powerful for building dynamic web pages.</li>
+                </ul>
+                <br>
+                <h3>Why Learn PHP?</h3>
+                <ul>
+                    <li><strong>Server-Side Scripting:</strong> PHP is primarily used for server-side scripting, allowing for dynamic web page generation.</li>
+                    <li><strong>Large Community and Resources:</strong> PHP has extensive community support, tutorials, and documentation.</li>
+                    <li><strong>Compatibility:</strong> PHP works well with a variety of databases, especially MySQL, and supports many different servers.</li>
+                    <li><strong>Open Source:</strong> PHP is free to use, and there are many free libraries and frameworks available (such as Laravel, Symfony, etc.).</li>
+                </ul>
+                <br>
+            </section>
+
+            <!-- PHP Data Types -->
+            <section id="two">
+                <h2>PHP Data Types</h2>
+                <p>PHP supports several data types, which can be categorized as scalar types, compound types, and special types.</p>
+                <br>
+                <h4>Scalar Types:</h4>
+                <ul>
+                    <li><strong>int:</strong> Represents integers.</li>
+                    <li><strong>float:</strong> Represents floating-point numbers.</li>
+                    <li><strong>string:</strong> Represents sequences of characters.</li>
+                    <li><strong>bool:</strong> Represents boolean values (true or false).</li>
+                </ul><br>
+
+                <h4>Compound Types:</h4>
+                <ul>
+                    <li><strong>array:</strong> Represents a collection of elements.</li>
+                    <li><strong>object:</strong> Represents instances of classes.</li>
+                </ul><br>
+
+                <h4>Special Types:</h4>
+                <ul>
+                    <li><strong>NULL:</strong> Represents a variable with no value.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    $name = "John"; // string
+                    $age = 25; // int
+                    $isStudent = true; // bool
+                    $height = 5.9; // float
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP Operators -->
+            <section id="three">
+                <h2>PHP Operators</h2>
+                <p>PHP provides a variety of operators for performing different operations on variables and values.</p>
+                <br>
+                <h4>Arithmetic Operators:</h4>
+                <ul>
+                    <li><strong>+</strong>: Addition</li>
+                    <li><strong>-</strong>: Subtraction</li>
+                    <li><strong>*</strong>: Multiplication</li>
+                    <li><strong>/</strong>: Division</li>
+                    <li><strong>%</strong>: Modulus</li>
+                </ul><br>
+
+                <h4>Comparison Operators:</h4>
+                <ul>
+                    <li><strong>==</strong>: Equal to</li>
+                    <li><strong>!=</strong>: Not equal to</li>
+                    <li><strong>></strong>: Greater than</li>
+                    <li><strong><</strong>: Less than</li>
+                    <li><strong>===</strong>: Identical (value and type)</li>
+                </ul><br>
+
+                <h4>Logical Operators:</h4>
+                <ul>
+                    <li><strong>&&</strong>: Logical AND</li>
+                    <li><strong>||</strong>: Logical OR</li>
+                    <li><strong>!</strong>: Logical NOT</li>
+                </ul><br>
+            </section>
+
+            <!-- PHP Booleans -->
+            <section id="four">
+                <h2>PHP Booleans</h2>
+                <p>A Boolean value can be either true or false. It is often used in conditional statements to determine the flow of the program.</p>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    $isAdult = true;
+                    if ($isAdult) {
+                        echo "You are an adult.";
+                    } else {
+                        echo "You are not an adult.";
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP If ... Else -->
+            <section id="five">
+                <h2>PHP If ... Else</h2>
+                <p>The <strong>if</strong> statement is used to check a condition and execute a block of code if the condition is true.</p>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    $age = 18;
+                    if ($age >= 18) {
+                        echo "You are an adult.";
+                    } else {
+                        echo "You are a minor.";
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP While Loop -->
+            <section id="six">
+                <h2>PHP While Loop</h2>
+                <p>The <strong>while</strong> loop in PHP runs as long as the specified condition is true.</p>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    $i = 0;
+                    while ($i < 5) {
+                        echo "Number: $i <br>";
+                        $i++;
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP For Loop -->
+            <section id="seven">
+                <h2>PHP For Loop</h2>
+                <p>The <strong>for</strong> loop is used when the number of iterations is known beforehand.</p>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    for ($i = 0; $i < 5; $i++) {
+                        echo "Number: $i <br>";
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP Break and Continue -->
+            <section id="eight">
+                <h2>PHP Break and Continue</h2>
+                <p><strong>break</strong> stops the loop, and <strong>continue</strong> skips to the next iteration.</p>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    for ($i = 0; $i < 10; $i++) {
+                        if ($i == 5) {
+                            break;
+                        }
+                        echo "Number: $i <br>";
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP Arrays -->
+            <section id="nine">
+                <h2>PHP Arrays</h2>
+                <p>Arrays in PHP are used to store multiple values in a single variable.</p>
+                <br>
+                <h3>Indexed Arrays:</h3>
+                <pre><strong>
+                    $fruits = array("apple", "banana", "cherry");
+                    echo $fruits[0];  // Output: apple
+                </strong></pre>
+                <br>
+                <h3>Associative Arrays:</h3>
+                <pre><strong>
+                    $age = array("John" => 25, "Alice" => 22, "Bob" => 30);
+                    echo $age["John"];  // Output: 25
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP Strings -->
+            <section id="ten">
+                <h2>PHP Strings</h2>
+                <p>Strings in PHP are sequences of characters enclosed in either single or double quotes.</p>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    $greeting = "Hello, World!";
+                    echo $greeting;  // Output: Hello, World!
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP User Input -->
+            <section id="eleven">
+                <h2>PHP User Input</h2>
+                <p>PHP allows you to get user input from forms using the <strong>$_GET</strong> and <strong>$_POST</strong> superglobals.</p>
+                <br>
+                <h3>Example - Using $_GET:</h3>
+                <pre><strong>
+                    $name = $_GET["name"];
+                    echo "Hello, " . $name . "!";
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP Functions -->
+            <section id="twelve">
+                <h2>PHP Functions</h2>
+                <p>Functions in PHP are blocks of code that perform a specific task and can be reused.</p>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    function greet($name) {
+                        echo "Hello, " . $name;
+                    }
+                    greet("John");  // Output: Hello, John
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP Dictionaries -->
+            <section id="thirteen">
+                <h2>PHP Dictionaries</h2>
+                <p>In PHP, dictionaries are implemented as associative arrays where keys are mapped to values.</p>
+                <br>
+                <h3>Example:</h3>
+                <pre><strong>
+                    $person = array("name" => "John", "age" => 30);
+                    echo $person["name"];  // Output: John
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- PHP File I/O -->
+            <section id="fourteen">
+                <h2>PHP File I/O</h2>
+                <p>PHP provides several functions to read from and write to files.</p>
+                <br>
+                <h3>Example - Reading a File:</h3>
+                <pre><strong>
+                    $file = fopen("file.txt", "r");
+                    $content = fread($file, filesize("file.txt"));
+                    fclose($file);
+                    echo $content;
+                </strong></pre>
+                <br>
+            </section>
+        </div>
+    </main>
+
+
+    <footer id="series">    
+        <div class="Detail">
+         
+          <div class="for">
+           
+            <div class="right">
+              <table>
+                <tr>
+                  <th>Comapny</th>
+                  <th>Explore</th>
+                  <th>language</th>
+                </tr>
+                
+                <tr>
+                   <a href=""><td>About us</td></a>
+                   <a href=""><td>Job</td></a>
+                   <a href=""><td>Python</td></a>
+                </tr>
+              
+                <tr>
+                  <a href=""><td>Legal</td></a>
+                  <a href=""><td>challenge</td></a>
+                  <a href=""><td>Java</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Careers</td></a>
+                <a href=""><td>H-A-Thon</td></a>
+                <a href=""><td>c++</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>In media</td></a>
+                <a href=""><td>Contest</td></a>
+                <a href=""><td>PHP</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Contact us</td></a>
+                <a href=""><td>Classes</td></a>
+                <a href=""><td>MYSQL</td></a>
+             </tr>
+          
+           </table>
+              
+          </div> 
+    
+    
+    
+          <div class="left">
+           <form>
+           <h1>Contact Us </h1>
+    
+            <label for="yourname">Full Name:</label>
+            <input type="text" id="yourname" name="Uname" placeholder="Enter Your Name" class="equal">
+            <br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Emailid" class="equal">
+            <br><br>
+    
+            <label for="Contact">Phone No:</label>
+            <input type="tel" id="Contact" name="tel" class="equal">
+            <br><br>
+    
+            <label>Gender:</label>
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="others" name="Gender" value="Other">
+            <label for="others">Other</label>
+            <br><br>
+    
+            <label for="msg">Message</label>
+            <textarea name="Mag" id="msg" rows="4" cols="45"></textarea>
+            <br><br>
+    
+            <button>submit</button>
+    
+           </form>
+     
+         </div>
+        
+        </div>
+    
+        <p>&copy; 2024 CodeMastery. All rights reserved.</p>    
+    
+       </div> 
+    
+    </footer>
+
+
+
+
+</body>
+</html>

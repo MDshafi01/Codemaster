@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMastery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      
+    <header>
+     <div class="head">
+        
+      <div class="Home">
+         <div class="left">
+          <h1>CodeMastery</h1>
+         </div>
+  
+         <nav>
+           <div class="tut">
+             <a href="toutr.html"><button>Tutorial</button></a>
+             <a href="#series"><button>Services</button></a>
+             <a href="tutorials.html"><button>Certificates</button></a>
+            </div>
+          </nav>
+
+            <div class="serch">
+                <input type="text" placeholder="Search" class="searching">
+            </div> 
+
+        </div> 
+
+         
+        <nav>
+            <div class="lange">
+                <a href="index.html"><button>C</button></a>
+                <a href="cpp.html"><button>CPP</button></a>
+                <a href="HTML.html"><button>HTML</button></a>
+                <a href="Css.html"><button>CSS</button></a>
+                <a href="js.html"><button>JavaScript</button></a>
+                <a href="java.html"><button>Java</button></a>
+                <a href="python.html"><button>Python</button></a>
+                <a href="csharp.html"><button>C#</button></a>
+                <a href="PHP.html"><button>PHP</button></a>
+                <a href="MYSQL.html"><button>MySQL</button></a>
+                <a href="DSA.html"><button>DSA</button></a>
+            </div>
+            </nav>
+      </div>
+    </header>
+  
+    <main>
+
+        <div class="sidebar">
+        <button><a href="#one">C# Introduction</a></button>
+        <button><a href="#two">C# Data Types</a></button>
+        <button><a href="#three">C# Operators</a></button>
+        <button><a href="#four">C# Booleans</a></button>
+        <button><a href="#five">C# If ... Else</a></button>
+        <button><a href="#six">C# While Loop</a></button>
+        <button><a href="#seven">C# For Loop</a></button>
+        <button><a href="#eight">C# Break and Continue</a></button>
+        <button><a href="#nine">C# Lists</a></button>
+        <button><a href="#ten">C# Strings</a></button>
+        <button><a href="#eleven">C# User Input</a></button>
+        <button><a href="#twelve">C# Functions</a></button>
+        <button><a href="#thirteen">C# Dictionaries</a></button>
+        <button><a href="#fourteen">C# File I/O</a></button>
+        </div>
+
+        <div class="mai">
+            <!-- C# Introduction -->
+            <section id="one">
+                <h1>C# Introduction</h1>
+                <ul>
+                    <li>C# is a modern, object-oriented programming language developed by Microsoft as part of the .NET framework.</li>
+                    <li>C# is widely used for building desktop applications, web applications, and game development (especially with Unity).</li>
+                    <li>It is known for its simplicity, scalability, and performance.</li>
+                </ul>
+                <br>
+                <h3>Why Learn C#?</h3>
+                <ul>
+                    <li><strong>Versatility:</strong> C# can be used for a variety of applications, from web to game development.</li>
+                    <li><strong>Rich Libraries:</strong> The .NET Framework provides a rich set of libraries for building software solutions.</li>
+                    <li><strong>Strong Object-Oriented Features:</strong> C# is a fully object-oriented language, making it easy to structure large-scale applications.</li>
+                    <li><strong>Community and Support:</strong> Being backed by Microsoft, C# has a large developer community and comprehensive documentation.</li>
+                </ul>
+                <br>
+            </section>
+
+            <!-- C# Data Types -->
+            <section id="two">
+                <h2>C# Data Types</h2>
+                <p>C# has a rich set of data types to support various operations. These data types can be classified into value types and reference types.</p>
+                <br>
+                <h4>Value Types:</h4>
+                <ul>
+                    <li><strong>int:</strong> Used to store integer values.</li>
+                    <li><strong>float:</strong> Used to store floating-point numbers.</li>
+                    <li><strong>double:</strong> Used to store double-precision floating-point numbers.</li>
+                    <li><strong>char:</strong> Used to store a single character.</li>
+                    <li><strong>bool:</strong> Used to store Boolean values (true or false).</li>
+                </ul><br>
+
+                <h4>Reference Types:</h4>
+                <ul>
+                    <li><strong>string:</strong> Used to store sequences of characters.</li>
+                    <li><strong>array:</strong> Used to store a collection of elements of the same type.</li>
+                    <li><strong>class:</strong> Used to define objects.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    int age = 30;
+                    float height = 5.9f;
+                    bool isAdult = true;
+                    string name = "John";
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- C# Operators -->
+            <section id="three">
+                <h2>C# Operators</h2>
+                <p>C# includes a wide range of operators, including arithmetic, relational, logical, and bitwise operators.</p>
+                <br>
+                <h4>Arithmetic Operators:</h4>
+                <ul>
+                    <li><strong>+</strong>: Addition</li>
+                    <li><strong>-</strong>: Subtraction</li>
+                    <li><strong>*</strong>: Multiplication</li>
+                    <li><strong>/</strong>: Division</li>
+                    <li><strong>%</strong>: Modulus (remainder)</li>
+                </ul>
+                <br>
+                <h4>Relational Operators:</h4>
+                <ul>
+                    <li><strong>==</strong>: Equal to</li>
+                    <li><strong>!=</strong>: Not equal to</li>
+                    <li><strong>&gt;</strong>: Greater than</li>
+                    <li><strong>&lt;</strong>: Less than</li>
+                </ul>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    int a = 10, b = 20;
+                    if(a < b) {
+                        Console.WriteLine("a is less than b");
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- C# Booleans -->
+            <section id="four">
+                <h2>C# Booleans</h2>
+                <p>The <strong>bool</strong> type in C# can only hold two values: <strong>true</strong> or <strong>false</strong>.</p>
+                <br>
+                <h3>Boolean Expressions:</h3>
+                <ul>
+                    <li>Boolean values are typically used in control flow statements such as <strong>if</strong>, <strong>while</strong>, and <strong>for</strong> loops.</li>
+                    <li>Boolean expressions can be combined with logical operators like <strong>&&</strong> (AND), <strong>||</strong> (OR), and <strong>!</strong> (NOT).</li>
+                </ul>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    bool isRaining = false;
+                    if(isRaining) {
+                        Console.WriteLine("Take an umbrella!");
+                    } else {
+                        Console.WriteLine("Enjoy the sunshine!");
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- C# If ... Else -->
+            <section id="five">
+                <h2>C# If ... Else</h2>
+                <p>The <strong>if</strong> statement is used to execute a block of code based on a condition. The <strong>else</strong> statement is used as a fallback if the condition is false.</p>
+                <br>
+                <h3>Syntax:</h3>
+                <pre><strong>
+                    if(condition) {
+                        // Code to execute if the condition is true
+                    } else {
+                        // Code to execute if the condition is false
+                    }
+                </strong></pre>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    int age = 18;
+                    if(age >= 18) {
+                        Console.WriteLine("You are an adult.");
+                    } else {
+                        Console.WriteLine("You are a minor.");
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- C# While Loop -->
+            <section id="six">
+                <h2>C# While Loop</h2>
+                <p>The <strong>while</strong> loop repeatedly executes a block of code as long as the specified condition evaluates to <strong>true</strong>.</p>
+                <br>
+                <h3>Syntax:</h3>
+                <pre><strong>
+                    while(condition) {
+                        // Code to execute
+                    }
+                </strong></pre>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    int i = 0;
+                    while(i < 5) {
+                        Console.WriteLine(i);
+                        i++;
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- C# For Loop -->
+            <section id="seven">
+                <h2>C# For Loop</h2>
+                <p>The <strong>for</strong> loop allows you to execute a block of code a specified number of times.</p>
+                <br>
+                <h3>Syntax:</h3>
+                <pre><strong>
+                    for(initialization; condition; increment/decrement) {
+                        continue;  // Skips when i is 5
+                        // Code to execute
+                    }
+                </strong></pre>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    for(int i = 0; i < 5; i++) {
+                        Console.WriteLine(i);
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- C# Break and Continue -->
+            <h2>C# Break and Continue</h2>
+            <p>The <strong>break</strong> statement is used to exit a loop prematurely, and the <strong>continue</strong> statement is used to skip the current iteration and proceed to the next one.</p>
+            <br>
+            <h4>Example with break:</h4>
+            <pre><strong>
+                for(int i = 0; i < 10; i++) {
+                    if(i == 5) {
+                        break;  // Exits the loop when i is 5
+                    }
+                    Console.WriteLine(i);
+                }
+            </strong></pre>
+            <br>
+            <h4>Example with continue:</h4>
+            <pre><strong>
+                for(int i = 0; i < 10; i++) {
+                    if(i == 5) {
+                        <section id="eight">
+                        }
+                        Console.WriteLine(i);
+                    }
+                </strong></pre>
+                <br>
+            </section>
+
+          <!-- C# Lists -->
+          <section id="nine">
+              <h2>C# Lists</h2>
+              <p>In C#, a list is a generic collection of objects that can be resized dynamically.</p>
+              <br>
+              <h3>List Definition:</h3>
+              <pre><strong>
+                  using System;
+                  using System.Collections.Generic;
+                   List<string> fruits = new List<string>();
+                  fruits.Add("Apple");
+                  fruits.Add("Banana");
+                  fruits.Add("Cherry");
+                  Console.WriteLine(fruits[0]);  // Output: Apple
+              </strong></pre>
+              <br>
+              <h4>Common Methods:</h4>
+              <ul>
+                  <li><strong>Add()</strong>: Adds an element to the list.</li>
+                   <li><strong>Remove()</strong>: Removes the first occurrence of a specific object from the list.</li>
+                  <li><strong>Count</strong>: Gets the number of elements in the list.</li>
+                  <li><strong>Contains()</strong>: Checks if an element exists in the list.</li>
+              </ul>
+              <br>
+          </section>
+           <!-- C# Strings -->
+          <section id="ten">
+              <h2>C# Strings</h2>
+              <p>Strings in C# are immutable sequences of characters. Once a string is created, it cannot be changed.</p>
+              <br>
+              <h3>String Declaration:</h3>
+              <pre><strong>
+                  string greeting = "Hello, World!";
+                  Console.WriteLine(greeting);  // Output: Hello, World!
+              </strong></pre>
+              <br>
+              <h4>Common String Methods:</h4>
+              <ul>
+                  <li><strong>Length</strong>: Gets the length of the string.</li>
+                  <li><strong>Substring()</strong>: Extracts a substring from a string.</li>
+                  <li><strong>ToUpper()</strong>: Converts the string to uppercase.</li>
+                  <li><strong>ToLower()</strong>: Converts the string to lowercase.</li>
+                  <li><strong>Contains()</strong>: Checks if a substring is contained within the string.</li>
+              </ul>
+              <br>
+              <h4>Example:</h4>
+              <pre><strong>
+                  string name = "John";
+                  string upperName = name.ToUpper();  // JOHN
+                  string lowerName = name.ToLower();  // john
+              </strong></pre>
+              <br>
+          </section>
+           <!-- C# User Input -->
+          <section id="eleven">
+              <h2>C# User Input</h2>
+              <p>In C#, user input is commonly handled using the <strong>Console.ReadLine()</strong> method, which reads a line of text from the console.</p>
+              <br>
+              <h3>Example - Getting User Input:</h3>
+              <pre><strong>
+                  Console.WriteLine("Enter your name:");
+                  string name = Console.ReadLine();
+                  Console.WriteLine("Hello, " + name + "!");
+              </strong></pre>
+              <br>
+              <h4>Converting Input to Specific Types:</h4>
+              <ul>
+                  <li><strong>int.Parse()</strong>: Converts the input string to an integer.</li>
+                  <li><strong>double.Parse()</strong>: Converts the input string to a double.</li>
+                  <li><strong>Convert.ToInt32()</strong>: Converts the input string to an integer (handles nulls more safely).</li>
+              </ul>
+              <br>
+              <h4>Example - Converting Input:</h4>
+              <pre><strong>
+                  Console.WriteLine("Enter your age:");
+                  int age = int.Parse(Console.ReadLine());
+                  Console.WriteLine("Your age is: " + age);
+              </strong></pre>
+              <br>
+          </section>
+          <!-- C# Functions -->
+          <section id="twelve">
+              <h2>C# Functions</h2>
+              <p>In C#, a function is a block of code that performs a specific task. Functions (or methods) are defined inside classes and can take parameters and return values.</p>
+              <br>
+              <h3>Function Definition:</h3>
+              <pre><strong>
+                  using System;
+                   public class Program
+                  {
+                      public static int AddNumbers(int a, int b)
+                      {
+                          return a + b;
+                      }
+                       public static void Main(string[] args)
+                      {
+                          int result = AddNumbers(5, 10);
+                          Console.WriteLine("Sum: " + result);  // Output: Sum: 15
+                      }
+                  }
+              </strong></pre>
+              <br>
+              <h4>Function Types:</h4>
+              <ul>
+                  <li><strong>void</strong>: A function that does not return any value.</li>
+                  <li><strong>Return Type</strong>: A function that returns a value (e.g., int, string).</li>
+              </ul>
+              <br>
+              <h4>Example - Void Function:</h4>
+              <pre><strong>
+                  public static void GreetUser(string name)
+                  {
+                      Console.WriteLine("Hello, " + name + "!");
+                  }
+              </strong></pre>
+              <br>
+          </section>
+          <!-- C# Dictionaries -->
+          <section id="thirteen">
+              <h2>C# Dictionaries</h2>
+              <p>A <strong>Dictionary</strong> in C# is a collection of key-value pairs, where each key is unique. It provides fast lookups based on the key.</p>
+              <br>
+              <h3>Dictionary Declaration:</h3>
+              <pre><strong>
+                  using System;
+                  using System.Collections.Generic;
+                   Dictionary<string, int> ageDictionary = new Dictionary<string, int>();
+                  ageDictionary.Add("John", 30);
+                  ageDictionary.Add("Alice", 25);
+                  ageDictionary.Add("Bob", 35);
+                   Console.WriteLine(ageDictionary["John"]);  // Output: 30
+              </strong></pre>
+              <br>
+               <h4>Common Dictionary Methods:</h4>
+              <ul>
+                  <li><strong>Add()</strong>: Adds a key-value pair to the dictionary.</li>
+                  <li><strong>ContainsKey()</strong>: Checks if a key exists in the dictionary.</li>
+                  <li><strong>Remove()</strong>: Removes the key-value pair by key.</li>
+                  <li><strong>Keys</strong>: Gets a collection of keys in the dictionary.</li>
+                  <li><strong>Values</strong>: Gets a collection of values in the dictionary.</li>
+              </ul>
+              <br>
+          </section>
+           <!-- C# File I/O -->
+          <section id="fourteen">
+              <h2>C# File I/O</h2>
+              <p>C# provides several classes in the <strong>System.IO</strong> namespace to work with files, including reading, writing, and manipulating files.</p>
+              <br>
+              <h3>Reading from a File:</h3>
+              <pre><strong>
+                  using System;
+                  using System.IO;
+                   string filePath = @"C:\path\to\file.txt";
+                  string fileContent = File.ReadAllText(filePath);
+                  Console.WriteLine(fileContent);
+              </strong></pre>
+              <br>
+              <h3>Writing to a File:</h3>
+              <pre><strong>
+                  string content = "Hello, World!";
+                  File.WriteAllText(@"C:\path\to\file.txt", content);
+              </strong></pre>
+              <br>
+              <h4>Other File I/O Methods:</h4>
+              <ul>
+                  <li><strong>File.Exists()</strong>: Checks if the file exists.</li>
+                  <li><strong>File.AppendAllText()</strong>: Appends text to the end of a file.</li>
+                  <li><strong>StreamReader</strong>: Provides a way to read characters from a byte stream.</li>
+                  <li><strong>StreamWriter</strong>: Provides a way to write characters to a byte stream.</li>
+              </ul>
+              <br>
+          </section>
+       </div>
+            
+   </main>
+
+
+
+   <footer id="series">    
+    <div class="Detail">
+     
+      <div class="for">
+       
+        <div class="right">
+          <table>
+            <tr>
+              <th>Comapny</th>
+              <th>Explore</th>
+              <th>language</th>
+            </tr>
+            
+            <tr>
+               <a href=""><td>About us</td></a>
+               <a href=""><td>Job</td></a>
+               <a href=""><td>Python</td></a>
+            </tr>
+          
+            <tr>
+              <a href=""><td>Legal</td></a>
+              <a href=""><td>challenge</td></a>
+              <a href=""><td>Java</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>Careers</td></a>
+            <a href=""><td>H-A-Thon</td></a>
+            <a href=""><td>c++</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>In media</td></a>
+            <a href=""><td>Contest</td></a>
+            <a href=""><td>PHP</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>Contact us</td></a>
+            <a href=""><td>Classes</td></a>
+            <a href=""><td>MYSQL</td></a>
+         </tr>
+      
+       </table>
+          
+      </div> 
+
+
+
+      <div class="left">
+       <form>
+       <h1>Contact Us </h1>
+
+        <label for="yourname">Full Name:</label>
+        <input type="text" id="yourname" name="Uname" placeholder="Enter Your Name" class="equal">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Emailid" class="equal">
+        <br><br>
+
+        <label for="Contact">Phone No:</label>
+        <input type="tel" id="Contact" name="tel" class="equal">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" id="others" name="Gender" value="Other">
+        <label for="others">Other</label>
+        <br><br>
+
+        <label for="msg">Message</label>
+        <textarea name="Mag" id="msg" rows="4" cols="45"></textarea>
+        <br><br>
+
+        <button>submit</button>
+
+       </form>
+ 
+     </div>
+    
+    </div>
+
+    <p>&copy; 2024 CodeMastery. All rights reserved.</p>    
+
+   </div> 
+
+</footer>
+            
+</body>
+</html>

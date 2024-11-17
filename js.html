@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMastery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      
+    <header>
+        <div class="head">
+        
+        <div class="Home">
+            <div class="left">
+            <h1>CodeMastery</h1>
+            </div>
+      
+            <nav>
+            <div class="tut">
+                <a href="toutr.html"><button>Tutorial</button></a>
+                <a href="#series"><button>Services</button></a>
+                <a href="tutorials.html"><button>Certificates</button></a>
+            </div>
+            </nav>
+
+            <div class="serch">
+                <input type="text" placeholder="Search" class="searching">
+            </div> 
+
+        </div> 
+
+        
+        <nav>
+            <div class="lange">
+                <a href="index.html"><button>C</button></a>
+                <a href="cpp.html"><button>CPP</button></a>
+                <a href="HTML.html"><button>HTML</button></a>
+                <a href="Css.html"><button>CSS</button></a>
+                <a href="js.html"><button>JavaScript</button></a>
+                <a href="java.html"><button>Java</button></a>
+                <a href="python.html"><button>Python</button></a>
+                <a href="csharp.html"><button>C#</button></a>
+                <a href="PHP.html"><button>PHP</button></a>
+                <a href="MYSQL.html"><button>MySQL</button></a>
+                <a href="DSA.html"><button>DSA</button></a>
+            </div>
+            </nav>
+      </div>
+    </header>
+  
+    <main>
+
+        <div class="sidebar">
+        <button><a href="#one">JS Introduction</a></button>
+        <button><a href="#two">JS Data Types</a></button>
+        <button><a href="#three">JS Operators</a></button>
+        <button><a href="#four">JS Functions</a></button>
+        <button><a href="#five">JS If ... Else</a></button>
+        <button><a href="#six">JS Switch</a></button>
+        <button><a href="#seven">JS Loops</a></button>
+        <button><a href="#eight">JS Arrays</a></button>
+        <button><a href="#nine">JS Objects</a></button>
+        <button><a href="#ten">JS Events</a></button>
+        <button><a href="#eleven">JS DOM Manipulation</a></button>
+        <button><a href="#twelve">JS Asynchronous JS</a></button>
+        <button><a href="#thirteen">JS Error Handling</a></button>
+        </div>
+
+        <div class="mai">
+        <section id="one">
+            <h1>JavaScript Introduction</h1>
+            <ul>
+                <li>JavaScript (JS) is a high-level, interpreted scripting language that enables dynamic content on websites.</li>
+                <li>It is one of the core technologies of web development, alongside HTML and CSS.</li>
+                <li>JavaScript is versatile and used in client-side as well as server-side development (via Node.js).</li>
+            </ul>
+            <br>
+            <h3>Why Learn JavaScript?</h3>
+            <ul>
+                <li><strong>Interactivity: </strong> JavaScript adds interactivity to web pages, such as form validation, animations, and dynamic content loading.</li>
+                <li><strong>Wide Usage: </strong> It's used for both front-end (in the browser) and back-end development (via Node.js).</li>
+                <li><strong>Versatile: </strong> JavaScript can be used for various applications, from websites to mobile apps (React Native), and even server-side scripting (Node.js).</li>
+                <li><strong>Huge Community: </strong> JavaScript has a massive community, with many frameworks, libraries, and tools available to simplify development.</li>
+            </ul>
+            <br>
+            <h2>Basic Syntax of JavaScript</h2>
+            <pre><strong>
+                // Declaring variables
+                let name = 'CodeMastery';
+                const year = 2024;
+
+                // A simple function to greet
+                function greet() {
+                    console.log("Welcome to JavaScript!");
+                }
+                
+                greet();  // Calling the function
+            </strong></pre>
+        </section>
+
+        <section id="two">
+            <h2>Data Types in JavaScript</h2>
+            <p>JavaScript has different data types to represent different types of values:</p>
+            <br>
+            <h4>Basic Data Types:</h4>
+            <ul>
+                <li><strong>String:</strong> Represents a sequence of characters.</li>
+                <li><strong>Number:</strong> Represents both integer and floating-point numbers.</li>
+                <li><strong>Boolean:</strong> Represents a true/false value.</li>
+                <li><strong>undefined:</strong> Represents a variable that has been declared but not assigned a value.</li>
+                <li><strong>null:</strong> Represents the intentional absence of any value.</li>
+                <li><strong>Symbol:</strong> Represents a unique and immutable value.</li>
+            </ul><br>
+
+            <h4>Example:</h4>
+            <pre><strong>
+                let age = 25; // Number
+                let isActive = true; // Boolean
+                let name = "John"; // String
+                let user = null; // null value
+                let address; // undefined
+            </strong></pre><br>
+
+            <h4>Special Note on Types:</h4>
+            <ul>
+                <li>JavaScript is a loosely-typed language, which means you don't need to explicitly declare the type of variable.</li>
+            </ul><br>
+        </section>
+
+        <section id="three">
+            <h2>JavaScript Operators</h2>
+            <p>Operators are used to perform operations on variables and values in JavaScript.</p>
+            <br>
+            <h4>Types of Operators:</h4>
+            <ul>
+                <li><strong>Arithmetic Operators:</strong> +, -, *, /, %, ++, --</li>
+                <li><strong>Assignment Operators:</strong> =, +=, -=, *=, /=</li>
+                <li><strong>Comparison Operators:</strong> ==, ===, !=, !==, >, <, >=, <=</li>
+                <li><strong>Logical Operators:</strong> &&, ||, !</li>
+            </ul>
+
+            <h4>Example:</h4>
+            <pre><strong>
+                let x = 10;
+                let y = 5;
+
+                // Arithmetic Operation
+                let sum = x + y;  // 15
+
+                // Comparison
+                let isEqual = (x == y);  // false
+
+                // Logical
+                let result = (x > 5 && y < 10); // true
+            </strong></pre>
+        </section><br>
+
+        <section id="four">
+            <h2>JavaScript Functions</h2>
+            <p>Functions in JavaScript allow you to encapsulate code into reusable blocks.</p>
+            <br>
+            <h4>Basic Function Syntax:</h4>
+            <pre><strong>
+                function greetUser(name) {
+                    console.log("Hello, " + name);
+                }
+
+                greetUser("Alice");  // Outputs: Hello, Alice
+            </strong></pre><br>
+            
+            <h4>Function with Return:</h4>
+            <pre><strong>
+                function sum(a, b) {
+                    return a + b;
+                }
+
+                let result = sum(5, 10);  // result = 15
+                console.log(result);
+            </strong></pre><br>
+            
+            <h4>Arrow Function:</h4>
+            <pre><strong>
+                const multiply = (a, b) => a * b;
+
+                console.log(multiply(4, 5));  // Outputs: 20
+            </strong></pre>
+        </section><br>
+
+        <section id="five">
+            <h2>JavaScript If ... Else</h2>
+            <p>Use `if` statements to execute code based on conditions.</p><br>
+            <h4>Example:</h4>
+            <pre><strong>
+                let age = 18;
+
+                if (age >= 18) {
+                    console.log("You are an adult.");
+                } else {
+                    console.log("You are a minor.");
+                }
+            </strong></pre><br>
+        </section><br>
+
+        <section id="six">
+            <h2>JavaScript Switch Statement</h2>
+            <p>The `switch` statement is used to execute different blocks of code based on a condition.</p><br>
+            <h4>Syntax:</h4>
+            <pre><strong>
+                switch (expression) {
+                    case value1:
+                        // block of code
+                        break;
+                    case value2:
+                        // block of code
+                        break;
+                    default:
+                        // block of code
+                }
+            </strong></pre><br>
+        </section><br>
+        
+        <section id="seven">
+            <h2>JavaScript Loops</h2>
+            <p>Loops are used to repeat a block of code multiple times, as long as the specified condition is true.</p>
+            <br>
+            <h4>Types of Loops in JavaScript:</h4>
+            <ul>
+                <li><strong>for loop:</strong> Executes a block of code a specific number of times.</li>
+                <li><strong>while loop:</strong> Executes a block of code as long as the condition is true.</li>
+                <li><strong>do...while loop:</strong> Executes a block of code at least once and then repeats it as long as the condition is true.</li>
+            </ul>
+            <br>
+        
+            <h4>Example of a `for` loop:</h4>
+            <pre><strong>
+                for (let i = 0; i < 5; i++) {
+                    console.log(i);  // Outputs 0, 1, 2, 3, 4
+                }
+            </strong></pre>
+            <br>
+        
+            <h4>Example of a `while` loop:</h4>
+            <pre><strong>
+                let i = 0;
+                while (i < 5) {
+                    console.log(i);  // Outputs 0, 1, 2, 3, 4
+                    i++;
+                }
+            </strong></pre>
+            <br>
+        
+            <h4>Example of a `do...while` loop:</h4>
+            <pre><strong>
+                let i = 0;
+                do {
+                    console.log(i);  // Outputs 0, 1, 2, 3, 4
+                    i++;
+                } while (i < 5);
+            </strong></pre>
+        </section><br>
+        
+        <section id="eight">
+            <h2>JavaScript Arrays</h2>
+            <p>Arrays are used to store multiple values in a single variable.</p>
+            <br>
+            <h4>Array Syntax:</h4>
+            <pre><strong>
+                let fruits = ["apple", "banana", "orange"];
+                console.log(fruits[0]);  // Outputs: apple
+            </strong></pre>
+            <br>
+        
+            <h4>Array Methods:</h4>
+            <ul>
+                <li><strong>push():</strong> Adds one or more elements to the end of an array.</li>
+                <li><strong>pop():</strong> Removes the last element from an array.</li>
+                <li><strong>shift():</strong> Removes the first element from an array.</li>
+                <li><strong>unshift():</strong> Adds one or more elements to the beginning of an array.</li>
+                <li><strong>length:</strong> Returns the number of elements in an array.</li>
+            </ul>
+            <br>
+        
+            <h4>Example of Array Methods:</h4>
+            <pre><strong>
+                let fruits = ["apple", "banana", "orange"];
+        
+                fruits.push("grape");  // Adds "grape" to the end of the array
+                console.log(fruits);  // ["apple", "banana", "orange", "grape"]
+        
+                fruits.pop();  // Removes the last element ("grape")
+                console.log(fruits);  // ["apple", "banana", "orange"]
+            </strong></pre>
+        </section><br>
+        
+        <section id="nine">
+            <h2>JavaScript Objects</h2>
+            <p>Objects are collections of properties and methods. A property is a key-value pair, and a method is a function inside an object.</p>
+            <br>
+            <h4>Object Syntax:</h4>
+            <pre><strong>
+                let person = {
+                    firstName: "John",
+                    lastName: "Doe",
+                    age: 30,
+                    greet: function() {
+                        console.log("Hello, " + this.firstName + " " + this.lastName);
+                    }
+                };
+                person.greet();  // Outputs: Hello, John Doe
+            </strong></pre>
+            <br>
+        
+            <h4>Accessing Object Properties:</h4>
+            <ul>
+                <li>Using dot notation: `person.firstName`</li>
+                <li>Using bracket notation: `person["firstName"]`</li>
+            </ul>
+        </section><br>
+        
+        <section id="ten">
+            <h2>JavaScript Events</h2>
+            <p>Events are actions that occur in the browser (e.g., a user clicks a button, submits a form, etc.). JavaScript allows you to listen for events and execute code in response.</p>
+            <br>
+            <h4>Common Events:</h4>
+            <ul>
+                <li><strong>click:</strong> Triggered when an element is clicked.</li>
+                <li><strong>keydown:</strong> Triggered when a key is pressed down.</li>
+                <li><strong>submit:</strong> Triggered when a form is submitted.</li>
+                <li><strong>mouseover:</strong> Triggered when the mouse pointer hovers over an element.</li>
+            </ul>
+            <br>
+        
+            <h4>Event Listener Syntax:</h4>
+            <pre><strong>
+                let button = document.querySelector("button");
+        
+                button.addEventListener("click", function() {
+                    alert("Button clicked!");
+                });
+            </strong></pre>
+        </section><br>
+        
+        <section id="eleven">
+            <h2>DOM Manipulation in JavaScript</h2>
+            <p>The DOM (Document Object Model) allows JavaScript to access and manipulate HTML elements dynamically.</p>
+            <br>
+            <h4>Common DOM Methods:</h4>
+            <ul>
+                <li><strong>getElementById():</strong> Selects an element by its ID.</li>
+                <li><strong>querySelector():</strong> Selects the first element that matches a CSS selector.</li>
+                <li><strong>createElement():</strong> Creates a new HTML element.</li>
+                <li><strong>appendChild():</strong> Appends a new child element to an existing element.</li>
+            </ul>
+            <br>
+        
+            <h4>Example of DOM Manipulation:</h4>
+            <pre><strong>
+                let div = document.createElement("div");
+                div.textContent = "This is a new div!";
+                
+                document.body.appendChild(div);  // Adds the new div to the body
+            </strong></pre>
+        </section><br>
+        
+        <section id="twelve">
+            <h2>Asynchronous JavaScript</h2>
+            <p>Asynchronous JavaScript allows for non-blocking code execution, enabling tasks like fetching data from an API without freezing the browser.</p>
+            <br>
+            <h4>Common Asynchronous Methods:</h4>
+            <ul>
+                <li><strong>setTimeout():</strong> Executes a function after a specified delay.</li>
+                <li><strong>setInterval():</strong> Repeats a function at specified intervals.</li>
+                <li><strong>fetch():</strong> Makes an HTTP request to fetch data asynchronously.</li>
+            </ul>
+            <br>
+        
+            <h4>Example with `setTimeout()`:</h4>
+            <pre><strong>
+                setTimeout(function() {
+                    console.log("This message appears after 3 seconds");
+                }, 3000);  // 3000ms = 3 seconds
+            </strong></pre>
+            <br>
+        
+            <h4>Example with `fetch()`:</h4>
+            <pre><strong>
+                fetch("https://api.example.com/data")
+                    .then(response => response.json())
+                    .then(data => console.log(data))
+                    .catch(error => console.error("Error:", error));
+            </strong></pre>
+        </section><br>
+        
+        <section id="thirteen">
+            <h2>JavaScript Error Handling</h2>
+            <p>JavaScript provides a way to handle errors and prevent your program from crashing by using `try...catch` blocks.</p>
+            <br>
+            <h4>Basic Syntax of `try...catch`:</h4>
+            <pre><strong>
+                try {
+                    // Code that may throw an error
+                    let result = someFunction();
+                } catch (error) {
+                    // Code that runs if an error occurs
+                    console.log("Error: " + error.message);
+                }
+            </strong></pre>
+            <br>
+        
+            <h4>Example:</h4>
+            <pre><strong>
+                try {
+                    let number = 10;
+                    let result = number / 0;  // This will cause an error (infinity)
+                    console.log(result);
+                } catch (error) {
+                    console.log("Error: Division by zero is not allowed.");
+                }
+            </strong></pre>
+        </section><br>
+        
+    </div>
+    </main>
+
+    
+   <footer id="series">    
+    <div class="Detail">
+     
+      <div class="for">
+       
+        <div class="right">
+          <table>
+            <tr>
+              <th>Comapny</th>
+              <th>Explore</th>
+              <th>language</th>
+            </tr>
+            
+            <tr>
+               <a href=""><td>About us</td></a>
+               <a href=""><td>Job</td></a>
+               <a href=""><td>Python</td></a>
+            </tr>
+          
+            <tr>
+              <a href=""><td>Legal</td></a>
+              <a href=""><td>challenge</td></a>
+              <a href=""><td>Java</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>Careers</td></a>
+            <a href=""><td>H-A-Thon</td></a>
+            <a href=""><td>c++</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>In media</td></a>
+            <a href=""><td>Contest</td></a>
+            <a href=""><td>PHP</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>Contact us</td></a>
+            <a href=""><td>Classes</td></a>
+            <a href=""><td>MYSQL</td></a>
+         </tr>
+      
+       </table>
+          
+      </div> 
+
+
+
+      <div class="left">
+       <form>
+       <h1>Contact Us </h1>
+
+        <label for="yourname">Full Name:</label>
+        <input type="text" id="yourname" name="Uname" placeholder="Enter Your Name" class="equal">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Emailid" class="equal">
+        <br><br>
+
+        <label for="Contact">Phone No:</label>
+        <input type="tel" id="Contact" name="tel" class="equal">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" id="others" name="Gender" value="Other">
+        <label for="others">Other</label>
+        <br><br>
+
+        <label for="msg">Message</label>
+        <textarea name="Mag" id="msg" rows="4" cols="45"></textarea>
+        <br><br>
+
+        <button>submit</button>
+
+       </form>
+ 
+     </div>
+    
+    </div>
+
+    <p>&copy; 2024 CodeMastery. All rights reserved.</p>    
+
+   </div> 
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMastery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="Home">
+                <div class="left">
+                    <h1>CodeMastery</h1>
+                </div>
+
+                <nav>
+                    <div class="tut">
+                        <a href="toutr.html"><button>Tutorial</button></a>
+                        <a href="#series"><button>Services</button></a>
+                        <a href="tutorials.html"><button>Certificates</button></a>
+                    </div>
+                </nav>
+
+                <div class="serch">
+                    <input type="text" placeholder="Search" class="searching">
+                </div>
+            </div>
+
+            
+          <nav>
+            <div class="lange">
+                <a href="index.html"><button>C</button></a>
+                <a href="cpp.html"><button>CPP</button></a>
+                <a href="HTML.html"><button>HTML</button></a>
+                <a href="Css.html"><button>CSS</button></a>
+                <a href="js.html"><button>JavaScript</button></a>
+                <a href="java.html"><button>Java</button></a>
+                <a href="python.html"><button>Python</button></a>
+                <a href="csharp.html"><button>C#</button></a>
+                <a href="PHP.html"><button>PHP</button></a>
+                <a href="MYSQL.html"><button>MySQL</button></a>
+                <a href="DSA.html"><button>DSA</button></a>
+            </div>
+            </nav>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <button><a href="#one">MySQL Introduction</a></button>
+            <button><a href="#two">MySQL Data Types</a></button>
+            <button><a href="#three">MySQL Operators</a></button>
+            <button><a href="#four">MySQL Constraints</a></button>
+            <button><a href="#five">MySQL SELECT</a></button>
+            <button><a href="#six">MySQL INSERT</a></button>
+            <button><a href="#seven">MySQL UPDATE</a></button>
+            <button><a href="#eight">MySQL DELETE</a></button>
+            <button><a href="#nine">MySQL JOIN</a></button>
+            <button><a href="#ten">MySQL WHERE Clause</a></button>
+            <button><a href="#eleven">MySQL GROUP BY</a></button>
+            <button><a href="#twelve">MySQL ORDER BY</a></button>
+            <button><a href="#thirteen">MySQL Indexes</a></button>
+            <button><a href="#fourteen">MySQL Transactions</a></button>
+        </div>
+
+        <div class="mai">
+            <!-- MySQL Introduction -->
+            <section id="one">
+                <h1>MySQL Introduction</h1>
+                <ul>
+                    <li>MySQL is an open-source relational database management system (RDBMS) based on Structured Query Language (SQL).</li>
+                    <li>It is used for storing and managing data in a tabular format, where data is organized into rows and columns.</li>
+                    <li>MySQL is widely used in web applications, especially with PHP, for building dynamic websites and applications.</li>
+                </ul>
+                <br>
+                <h3>Why Learn MySQL?</h3>
+                <ul>
+                    <li><strong>Speed:</strong> MySQL is known for its fast performance when querying large datasets.</li>
+                    <li><strong>Reliability:</strong> It is reliable, with ACID-compliant features to handle complex database operations.</li>
+                    <li><strong>Scalability:</strong> MySQL can scale to support massive databases and handle high-traffic applications.</li>
+                    <li><strong>Community Support:</strong> MySQL has a large and active community offering help, tutorials, and resources.</li>
+                </ul>
+                <br>
+            </section>
+
+            <!-- MySQL Data Types -->
+            <section id="two">
+                <h2>MySQL Data Types</h2>
+                <p>MySQL supports various data types for storing different kinds of data in a database. These can be classified into numeric, date/time, and string types.</p>
+                <br>
+                <h4>Numeric Types:</h4>
+                <ul>
+                    <li><strong>INT:</strong> Used to store integer values.</li>
+                    <li><strong>DECIMAL:</strong> Stores exact numeric values with fixed decimal points.</li>
+                    <li><strong>FLOAT:</strong> Stores floating-point numbers.</li>
+                    <li><strong>DOUBLE:</strong> Stores double-precision floating-point numbers.</li>
+                </ul><br>
+
+                <h4>Date and Time Types:</h4>
+                <ul>
+                    <li><strong>DATE:</strong> Stores a date value in the format YYYY-MM-DD.</li>
+                    <li><strong>DATETIME:</strong> Stores both date and time values.</li>
+                    <li><strong>TIME:</strong> Stores time values in the format HH:MM:SS.</li>
+                    <li><strong>YEAR:</strong> Stores a 4-digit year.</li>
+                </ul><br>
+
+                <h4>String Types:</h4>
+                <ul>
+                    <li><strong>VARCHAR:</strong> Stores variable-length strings.</li>
+                    <li><strong>CHAR:</strong> Stores fixed-length strings.</li>
+                    <li><strong>TEXT:</strong> Stores long text strings, up to 65,535 characters.</li>
+                    <li><strong>BLOB:</strong> Used to store binary large objects.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    CREATE TABLE users (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        name VARCHAR(100),
+                        email VARCHAR(100),
+                        age INT
+                    );
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- MySQL Operators -->
+            <section id="three">
+                <h2>MySQL Operators</h2>
+                <p>Operators in MySQL are used to perform operations on data. These include arithmetic, comparison, and logical operators.</p>
+                <br>
+                <h4>Arithmetic Operators:</h4>
+                <ul>
+                    <li><strong>+</strong>: Addition</li>
+                    <li><strong>-</strong>: Subtraction</li>
+                    <li><strong>*</strong>: Multiplication</li>
+                    <li><strong>/</strong>: Division</li>
+                    <li><strong>%</strong>: Modulus</li>
+                </ul><br>
+
+                <h4>Comparison Operators:</h4>
+                <ul>
+                    <li><strong>==</strong>: Equal to</li>
+                    <li><strong>!=</strong>: Not equal to</li>
+                    <li><strong>></strong>: Greater than</li>
+                    <li><strong><</strong>: Less than</li>
+                    <li><strong>>=</strong>: Greater than or equal to</li>
+                    <li><strong><=</strong>: Less than or equal to</li>
+                </ul><br>
+
+                <h4>Logical Operators:</h4>
+                <ul>
+                    <li><strong>AND</strong>: Logical AND</li>
+                    <li><strong>OR</strong>: Logical OR</li>
+                    <li><strong>NOT</strong>: Logical NOT</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    SELECT * FROM users WHERE age > 20 AND email LIKE '%@gmail.com';
+                </strong></pre>
+                <br>
+            </section>
+
+            <!-- MySQL Constraints -->
+            <section id="four">
+                <h2>MySQL Constraints</h2>
+                <p>Constraints in MySQL are used to limit the type of data that can be inserted into a table. Some common constraints are:</p>
+                <br>
+                <ul>
+                    <li><strong>PRIMARY KEY:</strong> Uniquely identifies each record in a table.</li>
+                    <li><strong>FOREIGN KEY:</strong> Ensures referential integrity between two tables.</li>
+                    <li><strong>UNIQUE:</strong> Ensures that all values in a column are different.</li>
+                    <li><strong>NOT NULL:</strong> Ensures that a column cannot have NULL values.</li>
+                    <li><strong>DEFAULT:</strong> Sets a default value for a column if no value is provided.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    CREATE TABLE users (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        name VARCHAR(100) NOT NULL,
+                        email VARCHAR(100) UNIQUE,
+                        age INT DEFAULT 18
+                    );
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL SELECT -->
+            <section id="five">
+                <h2>MySQL SELECT</h2>
+                <p>The SELECT statement is used to retrieve data from a database. It is one of the most common SQL operations.</p>
+                <br>
+                <h4>Syntax:</h4>
+                <pre><strong>
+                    SELECT column1, column2 FROM table_name WHERE condition;
+                </strong></pre><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    SELECT * FROM users;
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL INSERT -->
+            <section id="six">
+                <h2>MySQL INSERT</h2>
+                <p>The INSERT INTO statement is used to insert new records into a table.</p>
+                <br>
+                <h4>Syntax:</h4>
+                <pre><strong>
+                    INSERT INTO table_name (column1, column2)
+                    VALUES (value1, value2);
+                </strong></pre><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    INSERT INTO users (name, email, age)
+                    VALUES ('John Doe', 'john@example.com', 30);
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL UPDATE -->
+            <section id="seven">
+                <h2>MySQL UPDATE</h2>
+                <p>The UPDATE statement is used to modify the existing records in a table.</p>
+                <br>
+                <h4>Syntax:</h4>
+                <pre><strong>
+                    UPDATE table_name
+                    SET column1 = value1, column2 = value2
+                    WHERE condition;
+                </strong></pre><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    UPDATE users
+                    SET age = 35
+                    WHERE name = 'John Doe';
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL DELETE -->
+            <section id="eight">
+                <h2>MySQL DELETE</h2>
+                <p>The DELETE statement is used to remove records from a table.</p>
+                <br>
+                <h4>Syntax:</h4>
+                <pre><strong>
+                    DELETE FROM table_name
+                    WHERE condition;
+                </strong></pre><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    DELETE FROM users
+                    WHERE name = 'John Doe';
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL JOIN -->
+            <section id="nine">
+                <h2>MySQL JOIN</h2>
+                <p>JOIN is used to combine rows from two or more tables based on a related column between them.</p>
+                <br>
+                <h4>Types of Joins:</h4>
+                <ul>
+                    <li><strong>INNER JOIN:</strong> Returns records that have matching values in both tables.</li>
+                    <li><strong>LEFT JOIN:</strong> Returns all records from the left table and the matched records from the right table.</li>
+                    <li><strong>RIGHT JOIN:</strong> Returns all records from the right table and the matched records from the left table.</li>
+                    <li><strong>FULL JOIN:</strong> Returns all records when there is a match in either left or right table.</li>
+                </ul><br>
+
+                <h4>Example:</h4>
+                <pre><strong>
+                    SELECT users.name, orders.amount
+                    FROM users
+                    INNER JOIN orders ON users.id = orders.user_id;
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL WHERE Clause -->
+            <section id="ten">
+                <h2>MySQL WHERE Clause</h2>
+                <p>The WHERE clause is used to filter records based on a given condition.</p>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    SELECT * FROM users
+                    WHERE age > 30;
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL GROUP BY -->
+            <section id="eleven">
+                <h2>MySQL GROUP BY</h2>
+                <p>The GROUP BY statement is used to group rows that have the same values into summary rows.</p>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    SELECT COUNT(*), city
+                    FROM customers
+                    GROUP BY city;
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL ORDER BY -->
+            <section id="twelve">
+                <h2>MySQL ORDER BY</h2>
+                <p>The ORDER BY clause is used to sort the result set in either ascending or descending order.</p>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    SELECT * FROM users
+                    ORDER BY name ASC;
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL Indexes -->
+            <section id="thirteen">
+                <h2>MySQL Indexes</h2>
+                <p>Indexes are used to speed up the retrieval of data from a table by creating a quick lookup method.</p>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    CREATE INDEX idx_name ON users (name);
+                </strong></pre><br>
+            </section>
+
+            <!-- MySQL Transactions -->
+            <section id="fourteen">
+                <h2>MySQL Transactions</h2>
+                <p>Transactions in MySQL are used to ensure that a group of SQL operations are executed successfully together.</p>
+                <br>
+                <h4>Example:</h4>
+                <pre><strong>
+                    START TRANSACTION;
+                    UPDATE accounts SET balance = balance - 100 WHERE user_id = 1;
+                    UPDATE accounts SET balance = balance + 100 WHERE user_id = 2;
+                    COMMIT;
+                </strong></pre><br>
+            </section>
+        </div>
+    </main>
+
+    <footer id="series">    
+        <div class="Detail">
+         
+          <div class="for">
+           
+            <div class="right">
+              <table>
+                <tr>
+                  <th>Comapny</th>
+                  <th>Explore</th>
+                  <th>language</th>
+                </tr>
+                
+                <tr>
+                   <a href=""><td>About us</td></a>
+                   <a href=""><td>Job</td></a>
+                   <a href=""><td>Python</td></a>
+                </tr>
+              
+                <tr>
+                  <a href=""><td>Legal</td></a>
+                  <a href=""><td>challenge</td></a>
+                  <a href=""><td>Java</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Careers</td></a>
+                <a href=""><td>H-A-Thon</td></a>
+                <a href=""><td>c++</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>In media</td></a>
+                <a href=""><td>Contest</td></a>
+                <a href=""><td>PHP</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Contact us</td></a>
+                <a href=""><td>Classes</td></a>
+                <a href=""><td>MYSQL</td></a>
+             </tr>
+          
+           </table>
+              
+          </div> 
+    
+    
+    
+          <div class="left">
+           <form>
+           <h1>Contact Us </h1>
+    
+            <label for="yourname">Full Name:</label>
+            <input type="text" id="yourname" name="Uname" placeholder="Enter Your Name" class="equal">
+            <br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Emailid" class="equal">
+            <br><br>
+    
+            <label for="Contact">Phone No:</label>
+            <input type="tel" id="Contact" name="tel" class="equal">
+            <br><br>
+    
+            <label>Gender:</label>
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="others" name="Gender" value="Other">
+            <label for="others">Other</label>
+            <br><br>
+    
+            <label for="msg">Message</label>
+            <textarea name="Mag" id="msg" rows="4" cols="45"></textarea>
+            <br><br>
+    
+            <button>submit</button>
+    
+           </form>
+     
+         </div>
+        
+        </div>
+    
+        <p>&copy; 2024 CodeMastery. All rights reserved.</p>    
+    
+       </div> 
+    
+    </footer>
+
+
+
+
+</body>
+</html>

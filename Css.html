@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMastery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="Home">
+                <div class="left">
+                    <h1>CodeMastery</h1>
+                </div>
+
+                <nav>
+                    <div class="tut">
+                        <a href="toutr.html"><button>Tutorial</button></a>
+                        <a href="#series"><button>Services</button></a>
+                        <a href="tutorials.html"><button>Certificates</button></a>
+                    </div>
+                </nav>
+
+                <div class="serch">
+                    <input type="text" placeholder="Search" class="searching">
+                </div> 
+
+            </div> 
+
+            <nav>
+                <div class="lange">
+                    <a href="index.html"><button>C</button></a>
+                    <a href="cpp.html"><button>CPP</button></a>
+                    <a href="HTML.html"><button>HTML</button></a>
+                    <a href="Css.html"><button>CSS</button></a>
+                    <a href="js.html"><button>JavaScript</button></a>
+                    <a href="java.html"><button>Java</button></a>
+                    <a href="python.html"><button>Python</button></a>
+                    <a href="csharp.html"><button>C#</button></a>
+                    <a href="PHP.html"><button>PHP</button></a>
+                    <a href="MYSQL.html"><button>MySQL</button></a>
+                    <a href="DSA.html"><button>DSA</button></a>
+                </div>
+                </nav>
+    
+        </div>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <button><a href="#one">CSS Introduction</a></button>
+            <button><a href="#two">CSS Syntax</a></button>
+            <button><a href="#three">CSS Selectors</a></button>
+            <button><a href="#four">CSS Properties</a></button>
+            <button><a href="#five">CSS Colors</a></button>
+            <button><a href="#six">CSS Box Model</a></button>
+            <button><a href="#seven">CSS Flexbox</a></button>
+            <button><a href="#eight">CSS Grid</a></button>
+            <button><a href="#nine">CSS Transitions</a></button>
+            <button><a href="#ten">CSS Animations</a></button>
+            <button><a href="#eleven">CSS Media Queries</a></button>
+            <button><a href="#twelve">CSS Best Practices</a></button>
+        </div>
+
+<div class="mai">
+        
+   <section id="one">
+    <h1>CSS Introduction</h1><br>
+    <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS defines how elements should be displayed on screen, paper, or in other media.</p><br>
+    <p>It enables web developers to separate content (HTML) from design (CSS), allowing for greater flexibility and control over the layout and appearance of a website. This separation also makes it easier to maintain and update the visual presentation of a website without affecting its content.</p><br>
+    <p>CSS plays a critical role in web development by enabling responsive designs, animations, transitions, and more. It provides the tools to control the layout, colors, fonts, spacing, positioning, and other visual aspects of web pages, ensuring a seamless and pleasant user experience across different devices and screen sizes.</p>
+   </section><br>
+
+
+   <section id="two">
+    <h2>CSS Syntax</h2><br>
+    <p>CSS is written using a set of rules that describe how HTML elements should appear. Each rule consists of a selector and a declaration block. The selector targets the HTML element you want to style, while the declaration block contains one or more declarations that define how the element should be styled.</p><br>
+    <h3>Basic Syntax:</h3>
+    <pre><strong>
+        selector {
+            property: value;
+        }
+    </strong></pre><br>
+    <p>For example:</p><br>
+    <pre><strong>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </strong></pre><br>
+    <p>This rule targets all <code>&lt;p&gt;</code> elements and sets their text color to blue and font size to 16px.</p><br>
+    <h3>Detailed Example:</h3>
+    <pre><strong>
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+    </strong></pre><br>
+    <p>In the example above, the <code>h1</code> element has three styles applied: a font family of Arial, a text color of dark gray, and text alignment centered.</p>
+   </section><br>
+
+
+  <section id="three">
+    <h2>CSS Selectors</h2><br>
+    <p>CSS selectors are patterns used to select and style elements on a web page. There are several types of selectors, each serving a different purpose in targeting HTML elements.</p><br>
+    <h3>Types of Selectors:</h3>
+    <ul>
+        <li><strong>Element Selector:</strong> Targets elements by their tag name (e.g., <code>p { }</code> selects all <code>&lt;p&gt;</code> elements).</li>
+        <li><strong>Class Selector:</strong> Selects elements with a specific class attribute (e.g., <code>.button { }</code> selects all elements with the class <code>button</code>).</li>
+        <li><strong>Id Selector:</strong> Selects an element with a specific id attribute (e.g., <code>#header { }</code> selects the element with the id <code>header</code>).</li>
+        <li><strong>Universal Selector:</strong> Selects all elements (e.g., <code>* { }</code> applies styles to every element on the page).</li>
+        <li><strong>Attribute Selector:</strong> Targets elements with a specific attribute or attribute value (e.g., <code>input[type="text"] { }</code> selects all <code>&lt;input&gt;</code> elements with a type of <code>text</code>).</li>
+        <li><strong>Pseudo-classes:</strong> Selects elements in specific states, such as <code>:hover</code> for when an element is hovered over or <code>:first-child</code> for the first child element (e.g., <code>a:hover { }</code> applies styles when the <code>&lt;a&gt;</code> link is hovered over).</li>
+        <li><strong>Pseudo-elements:</strong> Targets parts of elements, such as the first letter or line of a text block (e.g., <code>p::first-letter { }</code> targets the first letter of every <code>&lt;p&gt;</code> element).</li>
+    </ul>
+   </section><br>
+
+
+  <section id="four">
+    <h2>CSS Properties</h2><br>
+    <p>CSS properties define how a specific element should appear. These properties can be used to control various visual aspects of an element, such as its size, color, layout, spacing, and more. Each property is followed by a value that specifies the desired effect.</p><br>
+    <h3>Common CSS Properties:</h3>
+    <ul>
+        <li><strong>color:</strong> Defines the text color (e.g., <code>color: red;</code>).</li>
+        <li><strong>font-size:</strong> Sets the size of the text (e.g., <code>font-size: 18px;</code>).</li>
+        <li><strong>font-family:</strong> Specifies the font to be used for text (e.g., <code>font-family: Arial, sans-serif;</code>).</li>
+        <li><strong>margin:</strong> Controls the space around an element (e.g., <code>margin: 20px;</code> adds space on all sides of an element).</li>
+        <li><strong>padding:</strong> Sets the space inside an element, between the content and the border (e.g., <code>padding: 10px;</code>).</li>
+        <li><strong>background-color:</strong> Defines the background color of an element (e.g., <code>background-color: #f0f0f0;</code>).</li>
+        <li><strong>width and height:</strong> Sets the size of an element (e.g., <code>width: 100px;</code>, <code>height: 200px;</code>).</li>
+        <li><strong>border:</strong> Specifies the border of an element, including its style, width, and color (e.g., <code>border: 2px solid black;</code>).</li>
+        <li><strong>display:</strong> Defines how an element should be displayed (e.g., <code>display: block;</code> or <code>display: inline;</code>).</li>
+    </ul>
+    <p>There are many other CSS properties available, depending on the effect you want to achieve. Properties are usually defined in the declaration block and applied to the selected HTML element.</p>
+   </section><br>
+
+
+  <section id="five">
+    <h2>CSS Colors</h2><br>
+    <p>Colors are a fundamental aspect of web design, and CSS provides several ways to define and use colors. You can choose from predefined color names, hexadecimal values, RGB, and RGBA color models. Each method has its own use case, depending on the design needs.</p><br>
+    <h3>Color Formats:</h3>
+    <ul>
+        <li><strong>Named Colors:</strong> CSS supports a wide range of standard color names like <code>red</code>, <code>blue</code>, <code>green</code>, and many others (e.g., <code>color: red;</code>).</li>
+        <li><strong>Hexadecimal:</strong> This format represents colors as six-digit codes, using the format <code>#RRGGBB</code>, where <code>RR</code>, <code>GG</code>, and <code>BB</code> are hexadecimal values representing red, green, and blue (e.g., <code>#ff0000</code> for red).</li>
+        <li><strong>RGB:</strong> Defines colors based on red, green, and blue values, where each component can range from 0 to 255 (e.g., <code>rgb(255, 0, 0)</code> for red).</li>
+        <li><strong>RGBA:</strong> Similar to RGB, but with an additional alpha (opacity) value to define transparency. The alpha value ranges from 0 (fully transparent) to 1 (fully opaque) (e.g., <code>rgba(255, 0, 0, 0.5)</code> for semi-transparent red).</li>
+        <li><strong>HSL:</strong> HSL stands for Hue, Saturation, and Lightness. This model represents color in terms of its hue (angle on the color wheel), saturation (intensity of the color), and lightness (brightness of the color) (e.g., <code>hsl(0, 100%, 50%)</code> for pure red).</li>
+    </ul>
+    <p>CSS provides flexibility in defining colors, allowing designers to choose from several methods depending on their preferences and needs.</p>
+  </section><br>
+
+
+  <section id="six">
+    <h2>CSS Box Model</h2><br>
+    <p>The CSS Box Model is a concept that defines the rectangular boxes generated for elements in the document tree. Every element on a webpage is essentially a box, and understanding how the box model works is crucial for layout and design.</p><br>
+    <h3>Components of the Box Model:</h3>
+    <ul>
+        <li><strong>Content:</strong> The actual content of the element (e.g., text, images, etc.). The content area is where the element’s content is displayed.</li>
+        <li><strong>Padding:</strong> The space between the content and the element's border. It provides space around the content, inside the element (e.g., <code>padding: 20px;</code>).</li>
+        <li><strong>Border:</strong> The line surrounding the padding (optional). You can set its width, style, and color (e.g., <code>border: 1px solid black;</code>).</li>
+        <li><strong>Margin:</strong> The outermost space, creating space between the element’s border and adjacent elements (e.g., <code>margin: 15px;</code>).</li>
+    </ul>
+    <p>These four components work together to determine the total size and spacing of an element. The total width and height of an element are calculated by adding the content width, padding, border, and margin.</p>
+  </section><br>
+
+
+  <section id="seven">
+    <h2>CSS Flexbox</h2><br>
+    <p>Flexbox is a layout model that provides a more efficient way to distribute space among elements within a container, even when their size is unknown or dynamic. Flexbox makes it easier to create flexible and responsive layouts, aligning elements horizontally or vertically with minimal effort.</p><br>
+    <h3>Key Flexbox Properties:</h3>
+    <ul>
+        <li><strong>display: flex;</strong> Defines a flex container and enables flexbox layout for its direct children.</li>
+        <li><strong>flex-direction:</strong> Defines the direction in which the flex items are placed in the flex container. Possible values are <code>row</code> (default), <code>column</code>, <code>row-reverse</code>, and <code>column-reverse</code>.</li>
+        <li><strong>justify-content:</strong> Aligns items along the main axis (horizontally in a row, vertically in a column). Common values include <code>flex-start</code>, <code>center</code>, <code>space-between</code>, and <code>space-around</code>.</li>
+        <li><strong>align-items:</strong> Aligns items along the cross axis (perpendicular to the main axis). Values include <code>flex-start</code>, <code>center</code>, <code>stretch</code>, <code>flex-end</code>, and <code>baseline</code>.</li>
+        <li><strong>flex-wrap:</strong> Determines whether the flex items should wrap onto new lines when there is not enough space. Possible values: <code>nowrap</code> (default), <code>wrap</code>, and <code>wrap-reverse</code>.</li>
+        <li><strong>align-self:</strong> Allows individual items to override the alignment set by <code>align-items</code>.</li>
+    </ul>
+    <p>Flexbox simplifies the creation of complex layouts, especially for creating fluid designs that adjust based on screen size.</p>
+   </section><br>
+
+        <section id="eight">
+          <h2>CSS Grid</h2><br>
+          <p>CSS Grid is a powerful layout system that allows you to create complex two-dimensional layouts easily.</p><br>
+          <h3>Grid Properties:</h3>
+           <ul>
+             <li><strong>display: grid;</strong> Defines a grid container.</li>
+             <li><strong>grid-template-columns:</strong> Defines the number and size of columns in a grid container.</li>
+             <li><strong>grid-template-rows:</strong> Defines the number and size of rows in a grid container.</li>
+            <li><strong>grid-gap:</strong> Sets the gap (space) between rows and columns in a grid layout.</li>
+            <li><strong>grid-row:</strong> Specifies where an item should be placed within the rows of the grid.</li>
+            <li><strong>grid-column:</strong> Specifies where an item should be placed within the columns of the grid.</li>
+           </ul>
+                <p>Grid provides a more powerful alternative to Flexbox for creating complex web layouts with ease.</p>
+            </section><br>
+
+            <!-- CSS Transitions -->
+            <section id="nine">
+                <h2>CSS Transitions</h2><br>
+                <p>CSS transitions allow you to change property values smoothly (over a given duration) from one state to another when an element’s state changes.</p><br>
+                <h3>Common Transition Properties:</h3>
+                <ul>
+                    <li><strong>transition-property:</strong> Specifies which property will transition.</li>
+                    <li><strong>transition-duration:</strong> Defines how long the transition will take.</li>
+                    <li><strong>transition-timing-function:</strong> Defines the speed curve of the transition (e.g., <code>linear</code>, <code>ease</code>, etc.).</li>
+                    <li><strong>transition-delay:</strong> Specifies a delay before the transition starts.</li>
+                </ul>
+                <p>Transitions can be used for hover effects, animation effects, and more, making it easier to add interactivity to your website.</p>
+            </section><br>
+
+            <!-- CSS Animations -->
+     <section id="ten">
+         <h2>CSS Animations</h2><br>
+         <p>CSS animations allow you to make elements move or change appearance over time. Animations consist of keyframes, which define the start and end points of an animation.</p><br>
+         <h3>Keyframe Animation Example:</h3>
+         <pre><strong>
+             @keyframes example {
+                 0% {
+                     background-color: red;
+                     transform: translateX(0);
+                 }
+                 100% {
+                     background-color: blue;
+                     transform: translateX(100px);
+                 }
+             }
+            .element {
+                 animation: example 2s infinite;
+             }
+         </strong></pre><br>
+         <p>This animation will change the background color from red to blue and move the element 100px to the right.</p>
+     </section><br>
+
+     
+            <section id="eleven">
+         <h2>CSS Media Queries</h2><br>
+         <p>CSS media queries are used to apply different styles depending on the device’s characteristics, such as screen size, resolution, or orientation.</p><br>
+         <h3>Example of a Media Query:</h3>
+         <pre><strong>
+             @media screen and (max-width: 768px) {
+                 body {
+                     font-size: 14px;
+                 }
+             }
+         </strong></pre><br>
+         <p>This media query will apply the specified styles when the viewport width is 768px or less.</p>
+         <p>Media queries are essential for making responsive web designs that adapt to different screen sizes.</p>
+     </section><br>
+    
+     
+  <section id="twelve">
+    <h2>CSS Best Practices</h2><br>
+    <p>Writing clean, maintainable, and efficient CSS is essential for any web project. By following best practices, you ensure your code is scalable, easy to understand, and easy to maintain. Below are some important CSS best practices to consider.</p><br>
+    
+    <h3>1. Use Meaningful Class and ID Names</h3>
+    <p>Choose clear and descriptive names for your classes and IDs. Avoid using overly generic names like <code>.box</code> or <code>#element1</code> as they don’t convey the purpose of the element. Instead, try to use meaningful names that describe the role of the element in the UI.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        /* Good */
+        .nav-menu { }
+        .btn-primary { }
+        
+        /* Bad */
+        .box { }
+        .element1 { }
+    </strong></pre>
+    
+    <h3>2. Organize Your CSS</h3>
+    <p>It’s essential to keep your CSS organized. Group similar rules together and use comments to divide sections logically. This will make it easier for you or others to find and edit specific parts of the stylesheet later on.</p><br>
+    <p>For example, place typography-related rules together, followed by layout-related rules, and then color and background styles.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        /* Typography */
+        body { font-family: Arial, sans-serif; }
+        h1, h2 { color: #333; }
+
+        /* Layout */
+        .container { width: 100%; margin: 0 auto; }
+        .row { display: flex; }
+        
+        /* Colors */
+        .btn-primary { background-color: #3498db; color: white; }
+    </strong></pre>
+
+    <h3>3. Avoid Inline Styles</h3>
+    <p>Inline styles can make your code messy and harder to maintain. It’s better to keep styles in separate CSS files, especially when the same style needs to be applied to multiple elements. This ensures that the styles are reusable and easier to manage.</p><br>
+    <p>For example, avoid using styles like <code>&lt;div style="color: blue;"&gt;</code>. Instead, define the style in an external CSS file and apply it using a class.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        /* Good */
+        <div class="text-blue"></div>
+        
+        /* Bad */
+        <div style="color: blue;"></div>
+    </strong></pre>
+
+    <h3>4. Minimize the Use of !important</h3>
+    <p>While <code>!important</code> can be useful for overriding styles, it should be used sparingly. Overuse of <code>!important</code> can make your CSS hard to maintain and debug. Instead, try to increase the specificity of your selectors or use better CSS architecture to avoid the need for <code>!important</code>.</p><br>
+    <p>For example, avoid writing styles like <code>color: red !important;</code> unless absolutely necessary. Consider restructuring your selectors instead.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        /* Avoid */
+        .btn { color: red !important; }
+
+        /* Instead, try */
+        .btn.primary { color: red; }
+    </strong></pre>
+
+    <h3>5. Use CSS Resets or Normalize</h3>
+    <p>Browsers apply their own default styles, which can vary between different browsers. Using a CSS reset (such as <code>reset.css</code>) or Normalize.css can help eliminate inconsistencies in default styling and create a consistent baseline for your styles.</p><br>
+    <p>Normalize.css is especially useful because it preserves useful default styles while correcting inconsistencies across browsers.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        /* Normalize.css or a similar reset */
+        @import url('normalize.css');
+    </strong></pre>
+
+    <h3>6. Keep It DRY (Don’t Repeat Yourself)</h3>
+    <p>One of the core principles in CSS development is to avoid repetition. If the same style is applied to multiple elements, group those elements together and define the common styles in one place. This not only makes the code cleaner but also easier to maintain.</p><br>
+    <p>Instead of repeating the same styles for multiple selectors, create a shared class or group them together using commas.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        /* Good */
+        .btn-primary, .btn-secondary { padding: 10px 20px; border-radius: 5px; }
+
+        /* Bad */
+        .btn-primary { padding: 10px 20px; border-radius: 5px; }
+        .btn-secondary { padding: 10px 20px; border-radius: 5px; }
+    </strong></pre>
+
+    <h3>7. Use Flexbox and Grid for Layouts</h3>
+    <p>Flexbox and CSS Grid are powerful layout systems that allow for responsive and dynamic designs. These modern layout techniques should be used in place of older techniques like floats or tables, which can be more cumbersome to work with and maintain.</p><br>
+    <p>Flexbox is great for one-dimensional layouts (either rows or columns), while Grid is more suited for two-dimensional layouts (both rows and columns). Combining both can give you complete flexibility when designing complex layouts.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        /* Flexbox for simple layout */
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        /* Grid for complex layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    </strong></pre>
+
+    <h3>8. Use CSS Variables (Custom Properties)</h3>
+    <p>CSS Variables allow you to define reusable values for things like colors, fonts, spacing, and other properties. This is especially helpful for creating a consistent design system and making it easier to update values across your entire site.</p><br>
+    <p>For example, you can define a custom property for the primary color and use it throughout your CSS file, which makes it easy to update the color in one place instead of having to modify every occurrence.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        :root {
+            --primary-color: #3498db;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+        }
+    </strong></pre>
+
+    <h3>9. Test on Multiple Devices and Screen Sizes</h3>
+    <p>Responsive design is crucial for modern web development. Always test your layout on different screen sizes and devices to ensure your site looks great everywhere. Use CSS media queries to adjust the layout and design based on the viewport size.</p><br>
+    <p>Don’t forget to test on mobile, tablet, and desktop screens, and use browser developer tools to simulate different devices during development.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        /* Responsive design using media queries */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </strong></pre>
+
+    <h3>10. Document Your CSS</h3>
+    <p>Good documentation is key to maintaining a clean and understandable codebase. Include comments to explain why certain styles are being applied, particularly for complex or non-standard code.</p><br>
+    <p>Always document custom styles and make note of any assumptions or dependencies related to specific elements or layout techniques. This will make it easier for future developers (or yourself) to understand the design decisions.</p><br>
+    <h4>Example:</h4>
+    <pre><strong>
+        /* Applying a custom style to the header */
+        .header {
+            background-color: #333; /* Dark background for contrast */
+        }
+    </strong></pre>
+
+    <p>By following these best practices, you can write efficient, clean, and scalable CSS that will make your web development process smoother and your code easier to maintain.</p>
+  </section><br>
+
+    </div>
+    </main>
+
+
+    <footer id="series">    
+        <div class="Detail">
+         
+          <div class="for">
+           
+            <div class="right">
+              <table>
+                <tr>
+                  <th>Comapny</th>
+                  <th>Explore</th>
+                  <th>language</th>
+                </tr>
+                
+                <tr>
+                   <a href=""><td>About us</td></a>
+                   <a href=""><td>Job</td></a>
+                   <a href=""><td>Python</td></a>
+                </tr>
+              
+                <tr>
+                  <a href=""><td>Legal</td></a>
+                  <a href=""><td>challenge</td></a>
+                  <a href=""><td>Java</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Careers</td></a>
+                <a href=""><td>H-A-Thon</td></a>
+                <a href=""><td>c++</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>In media</td></a>
+                <a href=""><td>Contest</td></a>
+                <a href=""><td>PHP</td></a>
+               </tr>
+    
+               <tr>
+                <a href=""><td>Contact us</td></a>
+                <a href=""><td>Classes</td></a>
+                <a href=""><td>MYSQL</td></a>
+             </tr>
+          
+           </table>
+              
+          </div> 
+    
+    
+    
+          <div class="left">
+           <form>
+           <h1>Contact Us </h1>
+    
+            <label for="yourname">Full Name:</label>
+            <input type="text" id="yourname" name="Uname" placeholder="Enter Your Name" class="equal">
+            <br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Emailid" class="equal">
+            <br><br>
+    
+            <label for="Contact">Phone No:</label>
+            <input type="tel" id="Contact" name="tel" class="equal">
+            <br><br>
+    
+            <label>Gender:</label>
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="others" name="Gender" value="Other">
+            <label for="others">Other</label>
+            <br><br>
+    
+            <label for="msg">Message</label>
+            <textarea name="Mag" id="msg" rows="4" cols="45"></textarea>
+            <br><br>
+    
+            <button>submit</button>
+    
+           </form>
+     
+         </div>
+        
+        </div>
+    
+        <p>&copy; 2024 CodeMastery. All rights reserved.</p>    
+    
+       </div> 
+    
+    </footer>
+    
+</body>
+</html>

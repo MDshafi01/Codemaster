@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMastery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      
+    <header>
+     <div class="head">
+        
+      <div class="Home">
+         <div class="left">
+          <h1>CodeMastery</h1>
+         </div>
+  
+         <nav>
+           <div class="tut">
+             <a href="toutr.html"><button>Tutorial</button></a>
+             <a href="#series"><button>Services</button></a>
+             <a href="tutorials.html"><button>Certificates</button></a>
+            </div>
+          </nav>
+
+            <div class="serch">
+                <input type="text" placeholder="Search" class="searching">
+            </div> 
+
+        </div> 
+
+        
+        <nav>
+            <div class="lange">
+                <a href="index.html"><button>C</button></a>
+                <a href="cpp.html"><button>CPP</button></a>
+                <a href="HTML.html"><button>HTML</button></a>
+                <a href="Css.html"><button>CSS</button></a>
+                <a href="js.html"><button>JavaScript</button></a>
+                <a href="java.html"><button>Java</button></a>
+                <a href="python.html"><button>Python</button></a>
+                <a href="csharp.html"><button>C#</button></a>
+                <a href="PHP.html"><button>PHP</button></a>
+                <a href="MYSQL.html"><button>MySQL</button></a>
+                <a href="DSA.html"><button>DSA</button></a>
+            </div>
+            </nav>
+      </div>
+    </header>
+   <main>
+
+    <div class="sidebar">
+        <button><a href="#one">HTML Introduction</a></button>
+        <button><a href="#two">HTML Basic</a></button>
+        <button><a href="#three">HTML Elements</a></button>
+        <button><a href="#four">HTML Attributes</a></button>
+        <button><a href="#five">HTML Headings</a></button>
+        <button><a href="#six">HTML Paragraphs</a></button>
+        <button><a href="#seven">HTML Styles</a></button>
+        <button><a href="#eight">HTML Text Formatting</a></button>
+        <button><a href="#nine">HTML Quotation</a></button>
+        <button><a href="#ten">HTML Comments</a></button>
+        <button><a href="#eleven">HTML Colors</a></button>
+        <button><a href="#twelve">HTML Styles - CSS</a></button>
+        <button><a href="#thirteen">HTML Links</a></button>
+        <button><a href="#fourteen">HTML Images</a></button>
+    </div>
+
+    <div class="mai">
+        <section id="one">
+            <h1>HTML Introduction</h1><br>
+            <p>HTML (Hypertext Markup Language) is the standard language for creating web pages and web applications. It structures content using a series of elements enclosed in tags. Web browsers interpret HTML to render and display the content on a page.</p>
+             <br>
+            <p>Every website you visit is made up of HTML documents. While HTML defines the structure, it does not handle the visual style or interactivity. These are handled by CSS and JavaScript respectively.</p>
+            <br>
+            <h3>Key Points:</h3>
+            <ul>
+                <li>HTML is used to define the structure and content of a webpage.</li>
+                <li>It consists of tags that mark the beginning and end of content.</li>
+                <li>HTML is the backbone of any website and must be combined with other technologies like CSS and JavaScript for full functionality.</li>
+            </ul>
+        </section><br>
+
+        <section id="two">
+            <h2>HTML Basic Structure</h2>
+            <br>
+            <p>The basic structure of an HTML document involves several key elements that help define the webpage.</p>
+             <br>
+            <h3>Basic HTML Template:</h3>
+            <pre><strong>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Welcome to HTML!&lt;/h1&gt;
+                        &lt;p&gt;This is your first webpage.&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </strong></pre><br>
+            <p>Each HTML document begins with a <code>&lt;!DOCTYPE html&gt;</code> declaration that defines the document type. The <code>&lt;html&gt;</code> tag encloses the entire document. Inside the <code>&lt;head&gt;</code>, you place metadata such as the title and character encoding. The <code>&lt;body&gt;</code> contains the visible content of the webpage.</p>
+        </section><br>
+
+        <section id="three">
+            <h2>HTML Elements</h2>
+            <br>
+            <p>HTML elements are the building blocks of a webpage. An element consists of an opening tag, content, and a closing tag. The opening tag marks the start of the element, and the closing tag marks the end.</p>
+             <br>
+            <h3>Example:</h3>
+            <pre><strong>
+                &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+                &lt;h1&gt;This is a heading&lt;/h1&gt;
+            </strong></pre><br>
+            <p>The above examples show two HTML elements: a paragraph and a heading. The <code>&lt;p&gt;</code> and <code>&lt;h1&gt;</code> tags indicate where the content starts and ends. There are many different types of HTML elements used to define various kinds of content, including text, links, images, and more.</p>
+             <br>
+            <h3>Self-Closing Tags:</h3>
+            <br>
+            <p>Some elements, such as images or line breaks, do not have closing tags. These are known as self-closing tags.</p>
+             <br>
+            <pre><strong>
+                &lt;br&gt;  <!-- line break -->
+                &lt;img src="image.jpg" alt="Description"&gt;
+            </strong></pre>
+        </section><br>
+
+        <section id="four">
+            <h2>HTML Attributes</h2>
+            <br>
+            <p>Attributes provide additional information about an element. They are always included in the opening tag and follow a name-value pair format: <code>name="value"</code>.</p>
+             <br>
+            <h3>Common HTML Attributes:</h3>
+            <ul>
+                <li><strong>id:</strong> Uniquely identifies an element on the page (e.g., <code>&lt;div id="header"&gt;</code>).</li>
+                <li><strong>class:</strong> Assigns one or more classes to an element, which can be used for styling (e.g., <code>&lt;p class="intro"&gt;</code>).</li>
+                <li><strong>href:</strong> Defines the destination of a hyperlink (e.g., <code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</code>).</li>
+                <li><strong>style:</strong> Adds inline CSS to an element (e.g., <code>&lt;p style="color: blue;"&gt;</code>).</li>
+                <li><strong>src:</strong> Defines the source of an image or media (e.g., <code>&lt;img src="image.jpg"&gt;</code>).</li>
+            </ul>
+            <br>
+            <p>Attributes allow you to customize how elements behave and appear on the page.</p>
+        </section><br>
+
+        <section id="five">
+            <h2>HTML Headings</h2>
+            <br>
+            <p>Headings are used to define the titles or sections of content in your webpage. HTML provides six levels of headings, ranging from <code>&lt;h1&gt;</code> (the largest) to <code>&lt;h6&gt;</code> (the smallest).</p>
+            <br>
+            <h3>Example:</h3>
+            <pre><strong>
+                &lt;h1&gt;Main Heading&lt;/h1&gt;
+                &lt;h2&gt;Subheading&lt;/h2&gt;
+                &lt;h3&gt;Smaller Subheading&lt;/h3&gt;
+            </strong></pre><br>
+            <p>Headings are important for structuring the content of your webpage and for search engine optimization (SEO) because they help search engines understand the hierarchy and relevance of the content.</p>
+        </section><br>
+
+        <section id="six">
+            <h2>HTML Paragraphs</h2>
+            <br>
+            <p>Paragraphs in HTML are defined using the <code>&lt;p&gt;</code> tag. They are used to structure blocks of text on a webpage.</p>
+            <br>
+            <h3>Example:</h3>
+            <pre><strong>
+                &lt;p&gt;This is a paragraph of text. Paragraphs help break up long sections of text and make content more readable.&lt;/p&gt;
+            </strong></pre><br>
+            <p>Each paragraph will appear with space above and below it, as browsers automatically apply margins to paragraphs.</p>
+        </section><br>
+
+        <section id="seven">
+            <h2>HTML Styles</h2>
+            <br>
+            <p>CSS (Cascading Style Sheets) is used to style HTML elements. Styles can be added directly to HTML elements using the <code>style</code> attribute or through internal or external CSS.</p>
+             <br>
+            <h3>Inline Style Example:</h3>
+            <pre><strong>
+                &lt;p style="color: red;"&gt;This paragraph is red.&lt;/p&gt;
+            </strong></pre><br>
+            <p>Inline styles are useful for quick changes but are not recommended for large websites as they can make the code harder to maintain.</p>
+             <br>
+            <h3>Internal Style Example:</h3>
+            <pre><strong>
+                &lt;style&gt;
+                    p { color: blue; font-size: 16px; }
+                &lt;/style&gt;
+            </strong></pre><br>
+            <p>Internal styles are written within the <code>&lt;head&gt;</code> section of the HTML document and can be used to style the whole page.</p>
+        </section><br>
+
+        <section id="eight">
+            <h2>HTML Text Formatting</h2>
+            <br>
+            <p>HTML provides various tags for formatting text. These formatting elements help to emphasize, highlight, or change the appearance of text content on the page.</p>
+            <br>
+            <h3>Common Text Formatting Tags:</h3>
+            <ul>
+                <li><strong><code>&lt;b&gt;</code>: Bold text</strong> - Makes the enclosed text bold.</li>
+                <li><strong><code>&lt;i&gt;</code>: Italic text</strong> - Makes the enclosed text italicized.</li>
+                <li><strong><code>&lt;u&gt;</code>: Underlined text</strong> - Underlines the enclosed text.</li>
+                <li><strong><code>&lt;s&gt;</code>: Strikethrough text</strong> - Draws a line through the text.</li>
+                <li><strong><code>&lt;mark&gt;</code>: Highlighted text</strong> - Highlights text with a background color.</li>
+                <li><strong><code>&lt;small&gt;</code>: Smaller text</strong> - Displays smaller text.</li>
+                <li><strong><code>&lt;sub&gt;</code>: Subscript text</strong> - Renders text below the baseline.</li>
+                <li><strong><code>&lt;sup&gt;</code>: Superscript text</strong> - Renders text above the baseline.</li>
+            </ul>
+             <br>
+            <h3>Examples:</h3>
+            <pre><strong>
+                &lt;b&gt;This is bold text&lt;/b&gt;
+                &lt;i&gt;This is italic text&lt;/i&gt;
+                &lt;u&gt;This is underlined text&lt;/u&gt;
+                &lt;s&gt;This is strikethrough text&lt;/s&gt;
+                &lt;mark&gt;This text is highlighted&lt;/mark&gt;
+                &lt;small&gt;This text is smaller&lt;/small&gt;
+                &lt;sub&gt;This is subscript&lt;/sub&gt;
+                &lt;sup&gt;This is superscript&lt;/sup&gt;
+            </strong></pre><br>
+
+            <p>These tags can be used individually or combined to create different effects in your text.</p>
+             <br>
+            <h3>Combining Formatting Tags:</h3>
+            <br>
+            <p>You can also combine multiple formatting tags to apply more than one style to the same content.</p>
+            <br>
+            <pre><strong>
+                &lt;b&gt;&lt;i&gt;This is bold and italicized text&lt;/i&gt;&lt;/b&gt;
+            </strong></pre><br>
+            <p>This would render the text as both bold and italicized.</p>
+        </section><br>
+
+        <section id="nine">
+            <h2>HTML Quotation</h2>
+            <br>
+            <p>In HTML, quotations are used to indicate text that is a quotation or to attribute speech to someone. HTML provides several elements for this purpose.</p>
+            <br>
+            <h3>Blockquote:</h3>
+            <br>
+            <p>The <code>&lt;blockquote&gt;</code> element is used to indicate a block of text that is a quotation from another source. It is typically displayed with indented margins.</p>
+             <br>
+            <pre><strong>
+                &lt;blockquote&gt;
+                    &lt;p&gt;This is a blockquote example. A blockquote is used to display text quoted from another source.&lt;/p&gt;
+                &lt;/blockquote&gt;
+            </strong></pre>
+
+            <h3>Cite:</h3>
+            <br>
+            <p>The <code>&lt;cite&gt;</code> element is used to reference the source of a quotation or work.</p>
+            <br>
+            <pre><strong>
+                &lt;cite&gt;Shakespeare, William. Hamlet. Act 3, Scene 2&lt;/cite&gt;
+            </strong></pre><br>
+
+            <h3>Inline Quotation:</h3>
+            <br>
+            <p>For inline quotations (a short quote within a paragraph), use the <code>&lt;q&gt;</code> element. It typically adds quotation marks around the quoted text.</p>
+            <br>
+            <pre><strong>
+                &lt;p&gt;The famous quote &lt;q&gt;To be, or not to be&lt;/q&gt; is from Shakespeare's Hamlet.&lt;/p&gt;
+            </strong></pre>
+        </section><br>
+
+        <section id="ten">
+            <h2>HTML Comments</h2>
+            <br>
+            <p>Comments in HTML are used to add notes or explanations within the code that will not be displayed in the browser. Comments are often used to document code or to temporarily disable parts of code while testing or debugging.</p>
+             <br>
+            <h3>Syntax of HTML Comments:</h3>
+            <pre><strong>
+                &lt;!-- This is a comment and will not be displayed in the browser --&gt;
+            </strong></pre>
+            <br>
+            <p>Comments can be placed anywhere within the HTML document, except within the <code>&lt;style&gt;</code> and <code>&lt;script&gt;</code> elements.</p>
+            <br>
+            <h3>Example:</h3>
+            <pre><strong>
+                &lt;!-- This is a header section --&gt;
+                &lt;header&gt;
+                    &lt;h1&gt;Welcome to the HTML Tutorial&lt;/h1&gt;
+                &lt;/header&gt;
+            </strong></pre>
+        </section><br>
+
+        <section id="eleven">
+            <h2>HTML Colors</h2>
+            <br>
+            <p>Colors can be applied to HTML elements using CSS. You can specify colors using color names, hexadecimal values, RGB values, or RGBA for transparency.</p>
+            <br>
+            <h3>Color Names:</h3>
+            <br>
+            <p>HTML supports 140 named colors. For example, <code>red</code>, <code>green</code>, and <code>blue</code>.</p>
+            <br>
+            <pre><strong>
+                &lt;p style="color: red;"&gt;This text is red.&lt;/p&gt;
+            </strong></pre><br>
+
+            <h3>Hexadecimal Colors:</h3>
+            <br>
+            <p>Hexadecimal values consist of a hashtag followed by six digits (e.g., <code>#FF5733</code>). The first two digits represent red, the next two represent green, and the last two represent blue.</p>
+            <br>
+            <pre><strong>
+                &lt;p style="color: #FF5733;"&gt;This text is a custom orange color.&lt;/p&gt;
+            </strong></pre><br>
+
+            <h3>RGB Colors:</h3>
+            <br>
+            <p>RGB (Red, Green, Blue) values allow for more precise color control. The format is <code>rgb(r, g, b)</code>, where each value ranges from 0 to 255.</p>
+            <br>
+            <pre><strong>
+                &lt;p style="color: rgb(255, 87, 51);"&gt;This text is a custom RGB orange color.&lt;/p&gt;
+            </strong></pre><br>
+            
+            <h3>RGBA Colors:</h3>
+            <br>
+            <p>RGBA is similar to RGB, but it also includes an alpha channel (transparency), which ranges from 0 (fully transparent) to 1 (fully opaque).</p>
+            <br>
+            <pre><strong>
+                &lt;p style="color: rgba(255, 87, 51, 0.5);"&gt;This text is a semi-transparent orange.&lt;/p&gt;
+            </strong></pre>
+        </section><br>
+
+        <section id="twelve">
+            <h2>HTML Styles - CSS</h2>
+            <br>
+            <p>CSS (Cascading Style Sheets) is used to style HTML elements. While HTML provides the structure, CSS controls the visual appearance of the page, such as colors, fonts, layouts, and spacing.</p>
+            <br>
+            <h3>Types of CSS</h3>
+            <br>
+            <p>There are three ways to apply CSS to HTML:</p>
+            <ul>
+                <li><strong>Inline CSS:</strong> Applied directly to individual HTML elements using the <code>style</code> attribute.</li>
+                <li><strong>Internal CSS:</strong> Defined within the <code>&lt;style&gt;</code> tag inside the <code>&lt;head&gt;</code> section of the HTML document.</li>
+                <li><strong>External CSS:</strong> Defined in an external stylesheet, which is linked to the HTML document using the <code>&lt;link&gt;</code> tag.</li>
+            </ul><br>
+
+            <h3>Inline CSS Example:</h3>
+            <br>
+            <pre><strong>
+                &lt;p style="color: blue; font-size: 18px;"&gt;This is a paragraph with inline CSS.&lt;/p&gt;
+            </strong></pre><br>
+            <p>This example applies inline CSS directly to the <code>&lt;p&gt;</code> element, changing its text color to blue and its font size to 18px.</p>
+             <br>
+            <h3>Internal CSS Example:</h3>
+            <br>
+            <p>Internal CSS is placed within the <code>&lt;style&gt;</code> tag in the document's <code>&lt;head&gt;</code> section:</p>
+            <br>
+            <pre><strong>
+                &lt;style&gt;
+                    p {
+                        color: green;
+                        font-size: 20px;
+                    }
+                &lt;/style&gt;
+            </strong></pre><br>
+            <p>This will apply the green color and 20px font size to all <code>&lt;p&gt;</code> elements in the document.</p>
+             <br>
+            <h3>External CSS Example:</h3>
+            <br>
+            <p>External CSS is defined in a separate file, and linked to the HTML document using the <code>&lt;link&gt;</code> tag:</p>
+            <br>
+            <pre><strong>
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            </strong></pre><br>
+            <p>In the "styles.css" file, you can write your CSS rules:</p>
+            <br>
+            <pre><strong>
+                p {
+                    color: red;
+                    font-size: 22px;
+                }
+            </strong></pre><br>
+            <p>This way, all <code>&lt;p&gt;</code> elements across multiple HTML pages can have consistent styling.</p>
+            <br>
+            <h3>CSS Selectors</h3>
+            <br>
+            <p>CSS selectors allow you to target specific HTML elements and apply styles to them. Some common selectors are:</p>
+            <ul>
+                <li><strong>Type Selector:</strong> Targets elements by their tag name (e.g., <code>p</code>, <code>h1</code>, <code>div</code>).</li>
+                <li><strong>Class Selector:</strong> Targets elements with a specific class attribute (e.g., <code>.myClass</code>).</li>
+                <li><strong>ID Selector:</strong> Targets elements with a specific ID attribute (e.g., <code>#myID</code>).</li>
+                <li><strong>Universal Selector:</strong> Targets all elements in the document (e.g., <code>*</code>).</li>
+            </ul><br>
+
+            <h3>Example of Class Selector:</h3>
+            <br>
+            <p>In HTML, you apply a class to an element:</p>
+            <br>
+            <pre><strong>
+                &lt;div class="container"&gt;This is a div with class "container"&lt;/div&gt;
+            </strong></pre><br>
+            <p>In CSS, you target the class:</p>
+            <br>
+            <pre><strong>
+                .container {
+                    background-color: lightgray;
+                    padding: 10px;
+                }
+            </strong></pre><br>
+            <p>This will apply a light gray background and padding to the div with the class "container".</p>
+             <br>
+            <h3>CSS Box Model</h3>
+            <br>
+            <p>The CSS box model defines how the elements on a page are structured and how their size is calculated. It consists of four parts:</p>
+            <ul>
+                <li><strong>Content:</strong> The actual content of the element (e.g., text, images).</li>
+                <li><strong>Padding:</strong> The space between the content and the border.</li>
+                <li><strong>Border:</strong> The border around the padding (if any).</li>
+                <li><strong>Margin:</strong> The space outside the border, separating the element from other elements.</li>
+            </ul><br>
+            <p>By adjusting the padding, border, and margin, you can control the spacing and layout of your page.</p>
+            <br>
+            <h3>Example of Box Model:</h3>
+            <br>
+            <pre><strong>
+                div {
+                    width: 200px;
+                    padding: 10px;
+                    border: 5px solid black;
+                    margin: 20px;
+                }
+            </strong></pre><br>
+            <p>This will create a <code>div</code> with a width of 200px, 10px padding, a 5px black border, and 20px margin.</p>
+             <br>
+            <h3>Responsive Web Design</h3>
+            <br>
+            <p>Responsive web design ensures that your web pages look good on all devices, from desktops to mobile phones. This is achieved by using flexible layouts, grids, and media queries.</p>
+             <br>
+            <h3>Media Queries:</h3>
+            <br>
+            <p>Media queries allow you to apply different styles depending on the screen size of the device. Here's an example:</p>
+             <br>
+            <pre><strong>
+                @media (max-width: 768px) {
+                    body {
+                        font-size: 14px;
+                    }
+                }
+            </strong></pre><br>
+            <p>This CSS rule changes the font size to 14px on screens that are 768px wide or smaller (like tablets or mobile phones).</p>
+             <br>
+            <h3>CSS Flexbox</h3>
+            <br>
+            <p>Flexbox is a layout module in CSS that allows you to create flexible and responsive layouts with ease. It distributes space along a row or column.</p>
+            <br>
+            <h3>Example of Flexbox Layout:</h3>
+            <br>
+            <pre><strong>
+                .container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .item {
+                    width: 100px;
+                    height: 100px;
+                    background-color: lightblue;
+                    margin: 10px;
+                }
+            </strong></pre><br>
+            <p>This will create a flex container with items spaced evenly along the row, each item having a width of 100px and a background color of light blue.</p>
+        </section><br>
+
+        <section id="thirteen">
+            <h2>HTML Links</h2>
+            <br>
+            <p>Links are an essential part of the web, allowing users to navigate between pages or resources. In HTML, links are created using the <code>&lt;a&gt;</code> tag. The <code>&lt;a&gt;</code> tag stands for anchor and is used to define hyperlinks.</p>
+            <br>
+            <h3>Creating a Basic Link</h3>
+            <br>
+            <p>To create a basic hyperlink, use the <code>&lt;a&gt;</code> tag with the <code>href</code> attribute, which specifies the URL or destination of the link:</p>
+            <br>
+            <pre><strong>
+                &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+            </strong></pre><br>
+            <p>This will display a clickable link with the text "Visit Example" that will take the user to the specified URL when clicked.</p>
+            <br>
+            <h3>Using the Target Attribute</h3>
+            <br>
+            <p>The <code>target</code> attribute specifies where to open the linked document. By default, links open in the same window. You can change this by setting the <code>target</code> to <code>_blank</code> to open the link in a new tab or window:</p>
+            <br>
+            <pre><strong>
+                &lt;a href="https://www.example.com" target="_blank"&gt;Open in a new tab&lt;/a&gt;
+            </strong></pre><br>
+            <p>Using <code>target="_blank"</code> ensures the link opens in a new browser tab, keeping the user on the current page.</p>
+            <br>
+            <h3>Links to Other Sections on the Same Page</h3>
+            <br>
+            <p>You can also create links that navigate to specific sections within the same page using anchor links. This is done by adding an <code>id</code> attribute to the target element and linking to it using the <code>href</code> attribute:</p>
+            <br>
+            <pre><strong>
+                &lt;a href="#section2"&gt;Go to Section 2&lt;/a&gt;
+            </strong></pre><br>
+            <p>In this example, clicking the link will scroll the page down to the element with <code>id="section2"</code>.</p>
+             <br>
+            <h3>Links to External Documents</h3>
+            <br>
+            <p>HTML links can also point to external documents, such as PDFs or Word documents. For instance, you can link to a PDF file like this:</p>
+            <br>
+            <pre><strong>
+                &lt;a href="document.pdf"&gt;Download the PDF&lt;/a&gt;
+            </strong></pre><br>
+            <p>When the user clicks the link, the PDF file will either open in the browser (depending on the browser's settings) or prompt the user to download it.</p>
+            <br>
+            <h3>Adding Link Titles</h3>
+            <br>
+            <p>Use the <code>title</code> attribute to provide additional information about the link. This will display when the user hovers over the link:</p>
+            <br>
+            <pre><strong>
+                &lt;a href="https://www.example.com" title="Visit Example Website"&gt;Visit Example&lt;/a&gt;
+            </strong></pre><br>
+            <p>The title attribute provides a tooltip when the user hovers over the link, enhancing accessibility and providing more context to the link.</p>
+            <br>
+            <h3>Linking to Email Addresses</h3>
+            <br>
+            <p>In addition to linking to websites, you can also create mailto links that open the user's default email client with a new message composed. This is done using the <code>mailto:</code> scheme in the <code>href</code> attribute:</p>
+            <br>
+            <pre><strong>
+                &lt;a href="mailto:someone@example.com"&gt;Send Email&lt;/a&gt;
+            </strong></pre><br>
+            <p>Clicking this link will open the default email application with a new message addressed to <code>someone@example.com</code>.</p>
+            <br>
+            <h3>Links to Telephone Numbers</h3>
+            <br>
+            <p>Similarly, you can create links to telephone numbers using the <code>tel:</code> scheme. This is especially useful for mobile users who can click a link to call a phone number directly:</p>
+             <br>
+            <pre><strong>
+                &lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;
+            </strong></pre><br>
+            <p>Clicking this link on a mobile device will initiate a call to the provided number.</p>
+             <br>
+            <h3>Linking to Files on Your Website</h3>
+            <br>
+            <p>If you want to link to a file hosted on your website, simply use a relative path instead of a full URL. For example, if you have an image called <code>logo.png</code> in your website's root directory:</p>
+             <br>
+            <pre><strong>
+                &lt;a href="logo.png"&gt;View Logo&lt;/a&gt;
+            </strong></pre><br>
+            <p>This will open the image when clicked, as long as the image is in the same directory as the HTML file.</p>
+             <br>
+            <h3>Best Practices for Links</h3>
+            <br>
+            <p>Here are a few best practices to consider when working with links:</p>
+            <ul>
+                <li>Use descriptive anchor text that tells the user what they will find when they click the link.</li>
+                <li>Make sure links are easily recognizable (e.g., use underlines or color contrasts).</li>
+                <li>Always test links to ensure they work correctly and lead to the intended destination.</li>
+                <li>Provide context for links that may open new windows or tabs, so users know what to expect.</li>
+            </ul><br>
+        </section>
+
+        <section id="fourteen">
+            <h2>HTML Images</h2>
+            <br>
+            <p>Images are an essential part of modern web design, used to enhance content and provide visual appeal. In HTML, you can embed images using the <code>&lt;img&gt;</code> tag.</p>
+             <br>
+            <h3>Basic Image Syntax</h3>
+            <br>
+            <p>To display an image, use the <code>&lt;img&gt;</code> tag with the <code>src</code> attribute, which specifies the path to the image file. The <code>alt</code> attribute provides alternative text for the image if it can't be displayed:</p>
+            <br>
+            <pre><strong>
+                &lt;img src="image.jpg" alt="Description of the image"&gt;
+            </strong></pre><br>
+            <p>In this example, the image located at <code>image.jpg</code> will be displayed. If the image is not found, the alternative text "Description of the image" will be shown instead.</p>
+             <br>
+            <h3>Image Attributes</h3>
+            <br>
+            <p>The <code>&lt;img&gt;</code> tag supports several attributes:</p>
+            <ul>
+                <li><strong>src</strong>: Specifies the image file location (can be a relative or absolute path).</li>
+                <li><strong>alt</strong>: Provides alternative text for the image, improving accessibility.</li>
+                <li><strong>width</strong> and <strong>height</strong>: Specifies the dimensions of the image (in pixels).</li>
+                <li><strong>title</strong>: Displays a tooltip when the user hovers over the image.</li>
+            </ul><br>
+
+            <h3>Example of Resizing an Image</h3>
+            <br>
+            <p>To resize an image, use the <code>width</code> and <code>height</code> attributes:</p>
+            <br>
+            <pre><strong>
+                &lt;img src="image.jpg" alt="Description" width="300" height="200"&gt;
+            </strong></pre><br>
+            <p>This will display the image at 300px width and 200px height, regardless of the original image dimensions.</p>
+             <br>
+            <h3>Linking an Image</h3>
+            <br>
+            <p>Just like text, images can also be linked to other pages or resources. To do this, simply wrap the <code>&lt;img&gt;</code> tag inside an <code>&lt;a&gt;</code> tag:</p>
+            <br>
+            <pre><strong>
+                &lt;a href="https://www.example.com"&gt;
+                    &lt;img src="logo.png" alt="Example Logo"&gt;
+                &lt;/a&gt;
+            </strong></pre><br>
+            <p>This will make the image clickable, and when clicked, it will redirect the user to the specified URL.</p>
+             <br>
+            <h3>Example of an Image on the Page</h3>
+            <br>
+            <p>Below is an example of an image displayed using the <code>&lt;img&gt;</code> tag. The image is sourced from a relative path and includes the <code>alt</code> and <code>title</code> attributes for accessibility and enhanced user experience:</p>
+            <br>
+            <pre><strong>
+                &lt;img src="https://www.example.com/logo.png" alt="Example Logo" title="Click to Visit Example" width="250"&gt;
+            </strong></pre><br>
+            <p>This will show the "Example Logo" image on the page. The <code>alt</code> text ensures that users with visual impairments or those using screen readers can understand the image content.</p>
+            <br>
+            <h3>Embedding Images from External Sources</h3>
+            <br>
+            <p>You can also embed images from external websites using the image URL. Here is an example of displaying an image hosted on an external server:</p>
+            <br>
+            <pre><strong>
+                &lt;img src="https://www.example.com/images/external-logo.png" alt="External Logo" width="300"&gt;
+            </strong></pre><br>
+            <p>This will fetch the image from the provided external URL and display it on your page.</p>
+            <br>
+            <h3>Best Practices for Using Images</h3>
+            <ul>
+                <li>Use descriptive <code>alt</code> text for accessibility, especially for visually impaired users.</li>
+                <li>Optimize image file sizes to improve website loading speed.</li>
+                <li>Use responsive image techniques (such as <code>srcset</code>) to ensure images display correctly on different screen sizes.</li>
+                <li>Always provide a fallback for images in case they fail to load (using the <code>alt</code> attribute).</li>
+                <li>Ensure the image file format is appropriate for the content (e.g., JPEG for photos, PNG for graphics with transparency, SVG for scalable vector images).</li>
+            </ul><br>
+
+            <h3>Real-World Example: Image Display</h3>
+            <br>
+            <p>Here’s a live example of an image embedded in an HTML page:</p>
+            <br>
+            <img src="nature.jpg" alt="Placeholder Example Image" title="This is a placeholder image" width="300">
+            <br>
+            <p>This is a placeholder image sourced from an external URL. You can replace it with your own image source to match your needs.</p>
+        </section>
+ 
+
+    </div>
+   </main>
+
+   <footer id="series">    
+    <div class="Detail">
+     
+      <div class="for">
+       
+        <div class="right">
+          <table>
+            <tr>
+              <th>Comapny</th>
+              <th>Explore</th>
+              <th>language</th>
+            </tr>
+            
+            <tr>
+               <a href=""><td>About us</td></a>
+               <a href=""><td>Job</td></a>
+               <a href=""><td>Python</td></a>
+            </tr>
+          
+            <tr>
+              <a href=""><td>Legal</td></a>
+              <a href=""><td>challenge</td></a>
+              <a href=""><td>Java</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>Careers</td></a>
+            <a href=""><td>H-A-Thon</td></a>
+            <a href=""><td>c++</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>In media</td></a>
+            <a href=""><td>Contest</td></a>
+            <a href=""><td>PHP</td></a>
+           </tr>
+
+           <tr>
+            <a href=""><td>Contact us</td></a>
+            <a href=""><td>Classes</td></a>
+            <a href=""><td>MYSQL</td></a>
+         </tr>
+      
+       </table>
+          
+      </div> 
+
+
+
+      <div class="left">
+       <form>
+       <h1>Contact Us </h1>
+
+        <label for="yourname">Full Name:</label>
+        <input type="text" id="yourname" name="Uname" placeholder="Enter Your Name" class="equal">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Emailid" class="equal">
+        <br><br>
+
+        <label for="Contact">Phone No:</label>
+        <input type="tel" id="Contact" name="tel" class="equal">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" id="others" name="Gender" value="Other">
+        <label for="others">Other</label>
+        <br><br>
+
+        <label for="msg">Message</label>
+        <textarea name="Mag" id="msg" rows="4" cols="45"></textarea>
+        <br><br>
+
+        <button>submit</button>
+
+       </form>
+ 
+     </div>
+    
+    </div>
+
+    <p>&copy; 2024 CodeMastery. All rights reserved.</p>    
+
+   </div> 
+
+</footer>
+
+
+
+
+</body>
+</html>
