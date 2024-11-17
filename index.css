@@ -93,6 +93,10 @@ header {
        margin-top: 1rem;
 }
 
+.mai h2{
+    color:black;
+}
+
 .mai pre{
     background-color: rgb(6, 4, 4);
     color: white;
