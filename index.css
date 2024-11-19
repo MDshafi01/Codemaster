@@ -381,33 +381,25 @@ body{
 
 
 
+@media (max-width: 480px) {
+        .left h1 {
+            font-size: 20px;
+        }
+    
+        nav .tut button {
+            font-size: 16px;
+        }
+    
+        .serch input {
+            padding: 10px;
+            font-size: 14px;
+        }
 
 
-
-
-@media (max-width: 400px) {
-    .Home {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .Home .left h1 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-        display: grid;
-        word-spacing: 0.5rem;
-    }
-
-    .tut {
-        /* width: 100%; */
-        /* align-items: center; */
-        flex-direction: column;
+        flex-direction : column;
         
     }
-
     .tut button {
-        /* width: 100%; */
         padding: 0.5rem;
         margin-right: 3rem;
         justify-content: space-between;
@@ -415,7 +407,7 @@ body{
 
     .searching {
         display: none;
-    }
+    } 
 
     .lange {
         align-items: center;
@@ -432,11 +424,16 @@ body{
     }
 
     .mai {
-        /* margin-top: 1rem; */
+        margin-top: 1rem;
         padding: 1rem;
         font-size: 1rem;
         height: auto;
         overflow: auto;
+    }
+
+    .mai pre{
+        overflow-y : auto;
+        width: 80%;
     }
 
     .sidebar {
@@ -532,9 +529,8 @@ body{
         left: 1rem;
         bottom: 4rem;
     }
-
-
 }
+
 
 
 
