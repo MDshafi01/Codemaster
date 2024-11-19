@@ -381,31 +381,33 @@ body{
 
 
 
-@media (max-width: 480px) {
-        .left h1 {
-            font-size: 20px;
-        }
-    
-        nav .tut button {
-            font-size: 16px;
-        }
-    
-        .serch input {
-            padding: 10px;
-            font-size: 14px;
-        }
+@media (max-width: 400px) {
+    .Home {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .Home .left h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        display: grid;
+        word-spacing: 0.5rem;
+    }
 
+    /* Button styling */
     .tut button {
         padding: 0.5rem;
         margin-right: 3rem;
         justify-content: space-between;
     }
 
+    /* Hide search input */
     .searching {
         display: none;
-    } 
+    }
 
+    /* Language buttons styling */
     .lange {
         align-items: center;
         width: 100%;
@@ -420,28 +422,26 @@ body{
         word-spacing: 1rem;
     }
 
+    /* Main content area styling */
     .mai {
-        margin-top: 1rem;
         padding: 1rem;
         font-size: 1rem;
         height: auto;
         overflow: auto;
     }
 
-    .mai pre{
-        overflow-y : auto;
-        width: 80%;
-    }
-
+    /* Correct class name for hiding sidebar */
     .sidebar {
-        display: none;
+        display: none; /* Hide the sidebar on mobile */
     }
 
+    /* Detail section styling */
     .Detail {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Form section styling */
     .for {
         margin-left: 0;
         width: 100%;
@@ -478,6 +478,7 @@ body{
         padding: 1rem;
     }
 
+    /* Table styling */
     .Detail table {
         width: 100%;
         margin-bottom: 2rem;
@@ -496,6 +497,7 @@ body{
         font-size: 1rem;
     }
 
+    /* Box1 image styling */
     .Box1 img {
         height: 180px;
         width: 220px;
@@ -512,6 +514,7 @@ body{
         bottom: 2rem;
     }
 
+    /* Box2 image styling */
     .Box2 img {
         height: 180px;
         width: 180px;
@@ -526,8 +529,37 @@ body{
         left: 1rem;
         bottom: 4rem;
     }
-}
 
+
+    iframe {
+        height: 200px;    /* Further reduce iframe height for very small screens */
+    }
+
+    td {
+        padding: 3px;     /* Reduce padding even more */
+    }
+
+        .side1 h1 {
+            font-size: 2em; /* Further reduce header size for very small screens */
+        }
+    
+        .side1 h2 {
+            font-size: 1.2em;
+            flex-direction: column;
+        }
+    
+        .side1 p {
+            font-size: 0.9em;
+        }
+    
+        .box h2 {
+            font-size: 1.2em;
+        }
+    
+        .box p {
+            font-size: 0.85em;
+        }
+}
 
 
 
